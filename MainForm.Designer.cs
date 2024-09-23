@@ -116,8 +116,8 @@ namespace Hangman
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Location = new System.Drawing.Point(45, 319);
+            this.button1.BackColor = System.Drawing.Color.Lavender;
+            this.button1.Location = new System.Drawing.Point(74, 319);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(40, 40);
@@ -127,8 +127,8 @@ namespace Hangman
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button2.Location = new System.Drawing.Point(101, 319);
+            this.button2.BackColor = System.Drawing.Color.Lavender;
+            this.button2.Location = new System.Drawing.Point(130, 319);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(40, 40);
@@ -138,8 +138,8 @@ namespace Hangman
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button3.Location = new System.Drawing.Point(157, 319);
+            this.button3.BackColor = System.Drawing.Color.Lavender;
+            this.button3.Location = new System.Drawing.Point(186, 319);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(40, 40);
@@ -149,8 +149,8 @@ namespace Hangman
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button4.Location = new System.Drawing.Point(213, 319);
+            this.button4.BackColor = System.Drawing.Color.Lavender;
+            this.button4.Location = new System.Drawing.Point(242, 319);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(40, 40);
@@ -160,8 +160,8 @@ namespace Hangman
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button5.Location = new System.Drawing.Point(269, 319);
+            this.button5.BackColor = System.Drawing.Color.Lavender;
+            this.button5.Location = new System.Drawing.Point(298, 319);
             this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(40, 40);
@@ -171,8 +171,8 @@ namespace Hangman
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button6.Location = new System.Drawing.Point(325, 319);
+            this.button6.BackColor = System.Drawing.Color.Lavender;
+            this.button6.Location = new System.Drawing.Point(354, 319);
             this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(40, 40);
@@ -182,8 +182,8 @@ namespace Hangman
             // 
             // button7
             // 
-            this.button7.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button7.Location = new System.Drawing.Point(381, 319);
+            this.button7.BackColor = System.Drawing.Color.Lavender;
+            this.button7.Location = new System.Drawing.Point(410, 319);
             this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(40, 40);
@@ -193,8 +193,8 @@ namespace Hangman
             // 
             // button8
             // 
-            this.button8.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button8.Location = new System.Drawing.Point(437, 319);
+            this.button8.BackColor = System.Drawing.Color.Lavender;
+            this.button8.Location = new System.Drawing.Point(466, 319);
             this.button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(40, 40);
@@ -204,8 +204,8 @@ namespace Hangman
             // 
             // button9
             // 
-            this.button9.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button9.Location = new System.Drawing.Point(493, 319);
+            this.button9.BackColor = System.Drawing.Color.Lavender;
+            this.button9.Location = new System.Drawing.Point(522, 319);
             this.button9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(40, 40);
@@ -215,8 +215,8 @@ namespace Hangman
             // 
             // button10
             // 
-            this.button10.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button10.Location = new System.Drawing.Point(549, 319);
+            this.button10.BackColor = System.Drawing.Color.Lavender;
+            this.button10.Location = new System.Drawing.Point(578, 319);
             this.button10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(40, 40);
@@ -226,8 +226,8 @@ namespace Hangman
             // 
             // button12
             // 
-            this.button12.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button12.Location = new System.Drawing.Point(507, 364);
+            this.button12.BackColor = System.Drawing.Color.Lavender;
+            this.button12.Location = new System.Drawing.Point(536, 364);
             this.button12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(40, 40);
@@ -237,8 +237,8 @@ namespace Hangman
             // 
             // button13
             // 
-            this.button13.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button13.Location = new System.Drawing.Point(451, 364);
+            this.button13.BackColor = System.Drawing.Color.Lavender;
+            this.button13.Location = new System.Drawing.Point(480, 364);
             this.button13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(40, 40);
@@ -248,8 +248,8 @@ namespace Hangman
             // 
             // button14
             // 
-            this.button14.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button14.Location = new System.Drawing.Point(395, 364);
+            this.button14.BackColor = System.Drawing.Color.Lavender;
+            this.button14.Location = new System.Drawing.Point(424, 364);
             this.button14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(40, 40);
@@ -259,8 +259,8 @@ namespace Hangman
             // 
             // button15
             // 
-            this.button15.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button15.Location = new System.Drawing.Point(339, 364);
+            this.button15.BackColor = System.Drawing.Color.Lavender;
+            this.button15.Location = new System.Drawing.Point(368, 364);
             this.button15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(40, 40);
@@ -270,8 +270,8 @@ namespace Hangman
             // 
             // button16
             // 
-            this.button16.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button16.Location = new System.Drawing.Point(283, 364);
+            this.button16.BackColor = System.Drawing.Color.Lavender;
+            this.button16.Location = new System.Drawing.Point(312, 364);
             this.button16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(40, 40);
@@ -281,8 +281,8 @@ namespace Hangman
             // 
             // button17
             // 
-            this.button17.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button17.Location = new System.Drawing.Point(227, 364);
+            this.button17.BackColor = System.Drawing.Color.Lavender;
+            this.button17.Location = new System.Drawing.Point(256, 364);
             this.button17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(40, 40);
@@ -292,8 +292,8 @@ namespace Hangman
             // 
             // button18
             // 
-            this.button18.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button18.Location = new System.Drawing.Point(171, 364);
+            this.button18.BackColor = System.Drawing.Color.Lavender;
+            this.button18.Location = new System.Drawing.Point(200, 364);
             this.button18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(40, 40);
@@ -303,8 +303,8 @@ namespace Hangman
             // 
             // button19
             // 
-            this.button19.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button19.Location = new System.Drawing.Point(115, 364);
+            this.button19.BackColor = System.Drawing.Color.Lavender;
+            this.button19.Location = new System.Drawing.Point(144, 364);
             this.button19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(40, 40);
@@ -314,8 +314,8 @@ namespace Hangman
             // 
             // button20
             // 
-            this.button20.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button20.Location = new System.Drawing.Point(59, 364);
+            this.button20.BackColor = System.Drawing.Color.Lavender;
+            this.button20.Location = new System.Drawing.Point(88, 364);
             this.button20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(40, 40);
@@ -325,8 +325,8 @@ namespace Hangman
             // 
             // button24
             // 
-            this.button24.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button24.Location = new System.Drawing.Point(421, 409);
+            this.button24.BackColor = System.Drawing.Color.Lavender;
+            this.button24.Location = new System.Drawing.Point(450, 409);
             this.button24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button24.Name = "button24";
             this.button24.Size = new System.Drawing.Size(40, 40);
@@ -336,8 +336,8 @@ namespace Hangman
             // 
             // button25
             // 
-            this.button25.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button25.Location = new System.Drawing.Point(365, 409);
+            this.button25.BackColor = System.Drawing.Color.Lavender;
+            this.button25.Location = new System.Drawing.Point(394, 409);
             this.button25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button25.Name = "button25";
             this.button25.Size = new System.Drawing.Size(40, 40);
@@ -347,8 +347,8 @@ namespace Hangman
             // 
             // button26
             // 
-            this.button26.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button26.Location = new System.Drawing.Point(309, 409);
+            this.button26.BackColor = System.Drawing.Color.Lavender;
+            this.button26.Location = new System.Drawing.Point(338, 409);
             this.button26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(40, 40);
@@ -358,8 +358,8 @@ namespace Hangman
             // 
             // button27
             // 
-            this.button27.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button27.Location = new System.Drawing.Point(253, 409);
+            this.button27.BackColor = System.Drawing.Color.Lavender;
+            this.button27.Location = new System.Drawing.Point(282, 409);
             this.button27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button27.Name = "button27";
             this.button27.Size = new System.Drawing.Size(40, 40);
@@ -369,8 +369,8 @@ namespace Hangman
             // 
             // button28
             // 
-            this.button28.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button28.Location = new System.Drawing.Point(197, 409);
+            this.button28.BackColor = System.Drawing.Color.Lavender;
+            this.button28.Location = new System.Drawing.Point(226, 409);
             this.button28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button28.Name = "button28";
             this.button28.Size = new System.Drawing.Size(40, 40);
@@ -380,8 +380,8 @@ namespace Hangman
             // 
             // button29
             // 
-            this.button29.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button29.Location = new System.Drawing.Point(141, 409);
+            this.button29.BackColor = System.Drawing.Color.Lavender;
+            this.button29.Location = new System.Drawing.Point(170, 409);
             this.button29.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button29.Name = "button29";
             this.button29.Size = new System.Drawing.Size(40, 40);
@@ -391,8 +391,8 @@ namespace Hangman
             // 
             // button30
             // 
-            this.button30.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button30.Location = new System.Drawing.Point(85, 409);
+            this.button30.BackColor = System.Drawing.Color.Lavender;
+            this.button30.Location = new System.Drawing.Point(114, 409);
             this.button30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button30.Name = "button30";
             this.button30.Size = new System.Drawing.Size(40, 40);
@@ -403,6 +403,7 @@ namespace Hangman
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Image = global::Hangman.Properties.Resources.Hangman0;
             this.pictureBox1.Location = new System.Drawing.Point(61, 26);
@@ -533,6 +534,7 @@ namespace Hangman
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(692, 463);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
