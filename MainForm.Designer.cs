@@ -120,7 +120,7 @@ namespace Hangman
             this.button1.Location = new System.Drawing.Point(45, 319);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(50, 40);
+            this.button1.Size = new System.Drawing.Size(40, 40);
             this.button1.TabIndex = 0;
             this.button1.Text = "Q";
             this.button1.UseVisualStyleBackColor = false;
@@ -131,7 +131,7 @@ namespace Hangman
             this.button2.Location = new System.Drawing.Point(101, 319);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(50, 40);
+            this.button2.Size = new System.Drawing.Size(40, 40);
             this.button2.TabIndex = 1;
             this.button2.Text = "W";
             this.button2.UseVisualStyleBackColor = false;
@@ -142,7 +142,7 @@ namespace Hangman
             this.button3.Location = new System.Drawing.Point(157, 319);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(50, 40);
+            this.button3.Size = new System.Drawing.Size(40, 40);
             this.button3.TabIndex = 2;
             this.button3.Text = "E";
             this.button3.UseVisualStyleBackColor = false;
@@ -153,7 +153,7 @@ namespace Hangman
             this.button4.Location = new System.Drawing.Point(213, 319);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(50, 40);
+            this.button4.Size = new System.Drawing.Size(40, 40);
             this.button4.TabIndex = 3;
             this.button4.Text = "R";
             this.button4.UseVisualStyleBackColor = false;
@@ -164,7 +164,7 @@ namespace Hangman
             this.button5.Location = new System.Drawing.Point(269, 319);
             this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(50, 40);
+            this.button5.Size = new System.Drawing.Size(40, 40);
             this.button5.TabIndex = 4;
             this.button5.Text = "T";
             this.button5.UseVisualStyleBackColor = false;
@@ -175,7 +175,7 @@ namespace Hangman
             this.button6.Location = new System.Drawing.Point(325, 319);
             this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(50, 40);
+            this.button6.Size = new System.Drawing.Size(40, 40);
             this.button6.TabIndex = 5;
             this.button6.Text = "Y";
             this.button6.UseVisualStyleBackColor = false;
@@ -186,7 +186,7 @@ namespace Hangman
             this.button7.Location = new System.Drawing.Point(381, 319);
             this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(50, 40);
+            this.button7.Size = new System.Drawing.Size(40, 40);
             this.button7.TabIndex = 6;
             this.button7.Text = "U";
             this.button7.UseVisualStyleBackColor = false;
@@ -197,7 +197,7 @@ namespace Hangman
             this.button8.Location = new System.Drawing.Point(437, 319);
             this.button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(50, 40);
+            this.button8.Size = new System.Drawing.Size(40, 40);
             this.button8.TabIndex = 7;
             this.button8.Text = "I";
             this.button8.UseVisualStyleBackColor = false;
@@ -208,7 +208,7 @@ namespace Hangman
             this.button9.Location = new System.Drawing.Point(493, 319);
             this.button9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(50, 40);
+            this.button9.Size = new System.Drawing.Size(40, 40);
             this.button9.TabIndex = 8;
             this.button9.Text = "O";
             this.button9.UseVisualStyleBackColor = false;
@@ -219,7 +219,7 @@ namespace Hangman
             this.button10.Location = new System.Drawing.Point(549, 319);
             this.button10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(50, 40);
+            this.button10.Size = new System.Drawing.Size(40, 40);
             this.button10.TabIndex = 9;
             this.button10.Text = "P";
             this.button10.UseVisualStyleBackColor = false;
@@ -230,7 +230,7 @@ namespace Hangman
             this.button12.Location = new System.Drawing.Point(507, 364);
             this.button12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(50, 40);
+            this.button12.Size = new System.Drawing.Size(40, 40);
             this.button12.TabIndex = 18;
             this.button12.Text = "L";
             this.button12.UseVisualStyleBackColor = false;
@@ -241,7 +241,7 @@ namespace Hangman
             this.button13.Location = new System.Drawing.Point(451, 364);
             this.button13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(50, 40);
+            this.button13.Size = new System.Drawing.Size(40, 40);
             this.button13.TabIndex = 17;
             this.button13.Text = "K";
             this.button13.UseVisualStyleBackColor = false;
@@ -252,7 +252,7 @@ namespace Hangman
             this.button14.Location = new System.Drawing.Point(395, 364);
             this.button14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(50, 40);
+            this.button14.Size = new System.Drawing.Size(40, 40);
             this.button14.TabIndex = 16;
             this.button14.Text = "J";
             this.button14.UseVisualStyleBackColor = false;
@@ -263,7 +263,7 @@ namespace Hangman
             this.button15.Location = new System.Drawing.Point(339, 364);
             this.button15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(50, 40);
+            this.button15.Size = new System.Drawing.Size(40, 40);
             this.button15.TabIndex = 15;
             this.button15.Text = "H";
             this.button15.UseVisualStyleBackColor = false;
@@ -274,7 +274,7 @@ namespace Hangman
             this.button16.Location = new System.Drawing.Point(283, 364);
             this.button16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(50, 40);
+            this.button16.Size = new System.Drawing.Size(40, 40);
             this.button16.TabIndex = 14;
             this.button16.Text = "G";
             this.button16.UseVisualStyleBackColor = false;
@@ -285,7 +285,7 @@ namespace Hangman
             this.button17.Location = new System.Drawing.Point(227, 364);
             this.button17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(50, 40);
+            this.button17.Size = new System.Drawing.Size(40, 40);
             this.button17.TabIndex = 13;
             this.button17.Text = "F";
             this.button17.UseVisualStyleBackColor = false;
@@ -296,7 +296,7 @@ namespace Hangman
             this.button18.Location = new System.Drawing.Point(171, 364);
             this.button18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(50, 40);
+            this.button18.Size = new System.Drawing.Size(40, 40);
             this.button18.TabIndex = 12;
             this.button18.Text = "D";
             this.button18.UseVisualStyleBackColor = false;
@@ -307,7 +307,7 @@ namespace Hangman
             this.button19.Location = new System.Drawing.Point(115, 364);
             this.button19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(50, 40);
+            this.button19.Size = new System.Drawing.Size(40, 40);
             this.button19.TabIndex = 11;
             this.button19.Text = "S";
             this.button19.UseVisualStyleBackColor = false;
@@ -318,7 +318,7 @@ namespace Hangman
             this.button20.Location = new System.Drawing.Point(59, 364);
             this.button20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(50, 40);
+            this.button20.Size = new System.Drawing.Size(40, 40);
             this.button20.TabIndex = 10;
             this.button20.Text = "A";
             this.button20.UseVisualStyleBackColor = false;
@@ -329,7 +329,7 @@ namespace Hangman
             this.button24.Location = new System.Drawing.Point(421, 409);
             this.button24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(50, 40);
+            this.button24.Size = new System.Drawing.Size(40, 40);
             this.button24.TabIndex = 26;
             this.button24.Text = "M";
             this.button24.UseVisualStyleBackColor = false;
@@ -340,7 +340,7 @@ namespace Hangman
             this.button25.Location = new System.Drawing.Point(365, 409);
             this.button25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(50, 40);
+            this.button25.Size = new System.Drawing.Size(40, 40);
             this.button25.TabIndex = 25;
             this.button25.Text = "N";
             this.button25.UseVisualStyleBackColor = false;
@@ -351,7 +351,7 @@ namespace Hangman
             this.button26.Location = new System.Drawing.Point(309, 409);
             this.button26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(50, 40);
+            this.button26.Size = new System.Drawing.Size(40, 40);
             this.button26.TabIndex = 24;
             this.button26.Text = "B";
             this.button26.UseVisualStyleBackColor = false;
@@ -362,7 +362,7 @@ namespace Hangman
             this.button27.Location = new System.Drawing.Point(253, 409);
             this.button27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(50, 40);
+            this.button27.Size = new System.Drawing.Size(40, 40);
             this.button27.TabIndex = 23;
             this.button27.Text = "V";
             this.button27.UseVisualStyleBackColor = false;
@@ -373,7 +373,7 @@ namespace Hangman
             this.button28.Location = new System.Drawing.Point(197, 409);
             this.button28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(50, 40);
+            this.button28.Size = new System.Drawing.Size(40, 40);
             this.button28.TabIndex = 22;
             this.button28.Text = "C";
             this.button28.UseVisualStyleBackColor = false;
@@ -384,7 +384,7 @@ namespace Hangman
             this.button29.Location = new System.Drawing.Point(141, 409);
             this.button29.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(50, 40);
+            this.button29.Size = new System.Drawing.Size(40, 40);
             this.button29.TabIndex = 21;
             this.button29.Text = "X";
             this.button29.UseVisualStyleBackColor = false;
@@ -395,7 +395,7 @@ namespace Hangman
             this.button30.Location = new System.Drawing.Point(85, 409);
             this.button30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(50, 40);
+            this.button30.Size = new System.Drawing.Size(40, 40);
             this.button30.TabIndex = 20;
             this.button30.Text = "Z";
             this.button30.UseVisualStyleBackColor = false;
