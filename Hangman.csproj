@@ -98,7 +98,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\hanging.gif" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Hangman0.png" />
   </ItemGroup>

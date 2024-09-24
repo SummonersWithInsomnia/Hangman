@@ -35,6 +35,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Image = global::Hangman.Properties.Resources.hanging;
             pictureBox1.Location = new System.Drawing.Point(288, 12);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new System.Drawing.Size(193, 293);

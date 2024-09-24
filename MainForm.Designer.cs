@@ -115,6 +115,7 @@ namespace Hangman
             System.Windows.Forms.Label label14;
             System.Windows.Forms.PictureBox pictureBox1;
             System.Windows.Forms.Panel panel1;
+            System.Windows.Forms.Button button21;
             button1 = new System.Windows.Forms.Button();
             button2 = new System.Windows.Forms.Button();
             button3 = new System.Windows.Forms.Button();
@@ -158,7 +159,9 @@ namespace Hangman
             label14 = new System.Windows.Forms.Label();
             pictureBox1 = new System.Windows.Forms.PictureBox();
             panel1 = new System.Windows.Forms.Panel();
+            button21 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(pictureBox1)).BeginInit();
+            panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -630,10 +633,22 @@ namespace Hangman
             // panel1
             // 
             panel1.BackgroundImage = global::Hangman.Properties.Resources.brick_panel;
+            panel1.Controls.Add(button21);
             panel1.Location = new System.Drawing.Point(2, 489);
             panel1.Name = "panel1";
             panel1.Size = new System.Drawing.Size(690, 39);
             panel1.TabIndex = 43;
+            // 
+            // button21
+            // 
+            button21.BackColor = System.Drawing.Color.Khaki;
+            button21.Location = new System.Drawing.Point(546, 5);
+            button21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            button21.Name = "button21";
+            button21.Size = new System.Drawing.Size(107, 30);
+            button21.TabIndex = 46;
+            button21.Text = "How to Play";
+            button21.UseVisualStyleBackColor = false;
             // 
             // MainForm
             // 
@@ -689,6 +704,7 @@ namespace Hangman
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hangman [Created by Summoners With Insomnia]";
             ((System.ComponentModel.ISupportInitialize)(pictureBox1)).EndInit();
+            panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
