@@ -90,6 +90,7 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Lavender;
+            this.flowLayoutPanel1.BackgroundImage = global::Hangman.Properties.Resources.brick_panel;
             this.flowLayoutPanel1.Controls.Add(this.panel1);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -106,6 +107,7 @@
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.BackColor = System.Drawing.Color.Lavender;
+            this.flowLayoutPanel2.BackgroundImage = global::Hangman.Properties.Resources.brick_panel;
             this.flowLayoutPanel2.Controls.Add(this.panel2);
             this.flowLayoutPanel2.Location = new System.Drawing.Point(1, 333);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
@@ -123,6 +125,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Hangman.Properties.Resources.background;
             this.ClientSize = new System.Drawing.Size(423, 356);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.flowLayoutPanel2);
