@@ -10,21 +10,16 @@ using System.Windows.Forms;
 
 namespace Hangman
 {
-    public partial class MainForm : Form
+    public partial class Form1 : Form
     {
-        public MainForm()
+        public Form1()
         {
             InitializeComponent();
         }
-        private void keyboard(object sender, EventArgs e)
-        {
 
-        }
-
-        private void button11_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            Form1 m = new Form1();
-            m.Show();
+            this.Hide();
         }
     }
 }

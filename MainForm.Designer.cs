@@ -111,6 +111,8 @@ namespace Hangman
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.button11 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -417,24 +419,29 @@ namespace Hangman
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Futura Bk BT", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(502, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 16);
+            this.label1.Size = new System.Drawing.Size(80, 27);
             this.label1.TabIndex = 30;
             this.label1.Text = "Score:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(530, 42);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(554, 54);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(11, 16);
+            this.label2.Size = new System.Drawing.Size(15, 20);
             this.label2.TabIndex = 31;
             this.label2.Text = "-";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 25F);
             this.label3.Location = new System.Drawing.Point(320, 230);
             this.label3.Name = "label3";
@@ -445,6 +452,7 @@ namespace Hangman
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 25F);
             this.label4.Location = new System.Drawing.Point(354, 230);
             this.label4.Name = "label4";
@@ -455,6 +463,7 @@ namespace Hangman
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 25F);
             this.label5.Location = new System.Drawing.Point(385, 230);
             this.label5.Name = "label5";
@@ -465,6 +474,7 @@ namespace Hangman
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 25F);
             this.label6.Location = new System.Drawing.Point(418, 230);
             this.label6.Name = "label6";
@@ -475,6 +485,7 @@ namespace Hangman
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 25F);
             this.label7.Location = new System.Drawing.Point(449, 230);
             this.label7.Name = "label7";
@@ -485,6 +496,7 @@ namespace Hangman
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 25F);
             this.label8.Location = new System.Drawing.Point(482, 230);
             this.label8.Name = "label8";
@@ -495,6 +507,7 @@ namespace Hangman
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 25F);
             this.label9.Location = new System.Drawing.Point(513, 230);
             this.label9.Name = "label9";
@@ -505,6 +518,7 @@ namespace Hangman
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 25F);
             this.label10.Location = new System.Drawing.Point(545, 230);
             this.label10.Name = "label10";
@@ -515,27 +529,51 @@ namespace Hangman
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Futura Bk BT", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(290, 26);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(43, 16);
+            this.label11.Size = new System.Drawing.Size(75, 27);
             this.label11.TabIndex = 40;
             this.label11.Text = "Level:";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(315, 42);
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(339, 54);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(14, 16);
+            this.label12.Size = new System.Drawing.Size(18, 20);
             this.label12.TabIndex = 41;
             this.label12.Text = "1";
             // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.Khaki;
+            this.button11.Location = new System.Drawing.Point(33, 492);
+            this.button11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(81, 30);
+            this.button11.TabIndex = 42;
+            this.button11.Text = "About Us";
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(2, 489);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(690, 39);
+            this.panel1.TabIndex = 43;
+            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(692, 463);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BackgroundImage = global::Hangman.Properties.Resources.background;
+            this.ClientSize = new System.Drawing.Size(692, 530);
+            this.Controls.Add(this.button11);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -575,8 +613,10 @@ namespace Hangman
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hangman [Created by Summoners With Insomnia]";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -625,6 +665,8 @@ namespace Hangman
         private Label label10;
         private Label label11;
         private Label label12;
+        private Button button11;
+        private Panel panel1;
     }
 }
 
