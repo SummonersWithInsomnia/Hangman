@@ -33,32 +33,32 @@ namespace Hangman
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.Button button1;
-            System.Windows.Forms.Button button2;
-            System.Windows.Forms.Button button3;
-            System.Windows.Forms.Button button4;
-            System.Windows.Forms.Button button5;
-            System.Windows.Forms.Button button6;
-            System.Windows.Forms.Button button7;
-            System.Windows.Forms.Button button8;
-            System.Windows.Forms.Button button9;
-            System.Windows.Forms.Button button10;
-            System.Windows.Forms.Button button12;
-            System.Windows.Forms.Button button13;
-            System.Windows.Forms.Button button14;
-            System.Windows.Forms.Button button15;
-            System.Windows.Forms.Button button16;
-            System.Windows.Forms.Button button17;
-            System.Windows.Forms.Button button18;
-            System.Windows.Forms.Button button19;
-            System.Windows.Forms.Button button20;
-            System.Windows.Forms.Button button24;
-            System.Windows.Forms.Button button25;
-            System.Windows.Forms.Button button26;
-            System.Windows.Forms.Button button27;
-            System.Windows.Forms.Button button28;
-            System.Windows.Forms.Button button29;
-            System.Windows.Forms.Button button30;
+            System.Windows.Forms.Button btn_q;
+            System.Windows.Forms.Button btn_w;
+            System.Windows.Forms.Button btn_e;
+            System.Windows.Forms.Button btn_r;
+            System.Windows.Forms.Button btn_t;
+            System.Windows.Forms.Button btn_y;
+            System.Windows.Forms.Button btn_u;
+            System.Windows.Forms.Button btn_i;
+            System.Windows.Forms.Button btn_o;
+            System.Windows.Forms.Button btn_p;
+            System.Windows.Forms.Button btn_l;
+            System.Windows.Forms.Button btn_k;
+            System.Windows.Forms.Button btn_j;
+            System.Windows.Forms.Button btn_h;
+            System.Windows.Forms.Button btn_g;
+            System.Windows.Forms.Button btn_f;
+            System.Windows.Forms.Button btn_d;
+            System.Windows.Forms.Button btn_s;
+            System.Windows.Forms.Button btn_a;
+            System.Windows.Forms.Button btn_m;
+            System.Windows.Forms.Button btn_n;
+            System.Windows.Forms.Button btn_b;
+            System.Windows.Forms.Button btn_v;
+            System.Windows.Forms.Button btn_c;
+            System.Windows.Forms.Button btn_x;
+            System.Windows.Forms.Button btn_z;
             System.Windows.Forms.Label label1;
             System.Windows.Forms.Label label2;
             System.Windows.Forms.Label label3;
@@ -77,32 +77,32 @@ namespace Hangman
             System.Windows.Forms.PictureBox pictureBox1;
             System.Windows.Forms.Panel panel1;
             System.Windows.Forms.Button button21;
-            button1 = new System.Windows.Forms.Button();
-            button2 = new System.Windows.Forms.Button();
-            button3 = new System.Windows.Forms.Button();
-            button4 = new System.Windows.Forms.Button();
-            button5 = new System.Windows.Forms.Button();
-            button6 = new System.Windows.Forms.Button();
-            button7 = new System.Windows.Forms.Button();
-            button8 = new System.Windows.Forms.Button();
-            button9 = new System.Windows.Forms.Button();
-            button10 = new System.Windows.Forms.Button();
-            button12 = new System.Windows.Forms.Button();
-            button13 = new System.Windows.Forms.Button();
-            button14 = new System.Windows.Forms.Button();
-            button15 = new System.Windows.Forms.Button();
-            button16 = new System.Windows.Forms.Button();
-            button17 = new System.Windows.Forms.Button();
-            button18 = new System.Windows.Forms.Button();
-            button19 = new System.Windows.Forms.Button();
-            button20 = new System.Windows.Forms.Button();
-            button24 = new System.Windows.Forms.Button();
-            button25 = new System.Windows.Forms.Button();
-            button26 = new System.Windows.Forms.Button();
-            button27 = new System.Windows.Forms.Button();
-            button28 = new System.Windows.Forms.Button();
-            button29 = new System.Windows.Forms.Button();
-            button30 = new System.Windows.Forms.Button();
+            btn_q = new System.Windows.Forms.Button();
+            btn_w = new System.Windows.Forms.Button();
+            btn_e = new System.Windows.Forms.Button();
+            btn_r = new System.Windows.Forms.Button();
+            btn_t = new System.Windows.Forms.Button();
+            btn_y = new System.Windows.Forms.Button();
+            btn_u = new System.Windows.Forms.Button();
+            btn_i = new System.Windows.Forms.Button();
+            btn_o = new System.Windows.Forms.Button();
+            btn_p = new System.Windows.Forms.Button();
+            btn_l = new System.Windows.Forms.Button();
+            btn_k = new System.Windows.Forms.Button();
+            btn_j = new System.Windows.Forms.Button();
+            btn_h = new System.Windows.Forms.Button();
+            btn_g = new System.Windows.Forms.Button();
+            btn_f = new System.Windows.Forms.Button();
+            btn_d = new System.Windows.Forms.Button();
+            btn_s = new System.Windows.Forms.Button();
+            btn_a = new System.Windows.Forms.Button();
+            btn_m = new System.Windows.Forms.Button();
+            btn_n = new System.Windows.Forms.Button();
+            btn_b = new System.Windows.Forms.Button();
+            btn_v = new System.Windows.Forms.Button();
+            btn_c = new System.Windows.Forms.Button();
+            btn_x = new System.Windows.Forms.Button();
+            btn_z = new System.Windows.Forms.Button();
             label1 = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
             label3 = new System.Windows.Forms.Label();
@@ -125,291 +125,291 @@ namespace Hangman
             panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // btn_q
             // 
-            button1.BackColor = System.Drawing.Color.Lavender;
-            button1.Location = new System.Drawing.Point(74, 319);
-            button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            button1.Name = "button1";
-            button1.Size = new System.Drawing.Size(40, 40);
-            button1.TabIndex = 0;
-            button1.Text = "Q";
-            button1.UseVisualStyleBackColor = false;
+            btn_q.BackColor = System.Drawing.Color.Lavender;
+            btn_q.Location = new System.Drawing.Point(74, 319);
+            btn_q.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btn_q.Name = "btn_q";
+            btn_q.Size = new System.Drawing.Size(40, 40);
+            btn_q.TabIndex = 0;
+            btn_q.Text = "Q";
+            btn_q.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btn_w
             // 
-            button2.BackColor = System.Drawing.Color.Lavender;
-            button2.Location = new System.Drawing.Point(130, 319);
-            button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            button2.Name = "button2";
-            button2.Size = new System.Drawing.Size(40, 40);
-            button2.TabIndex = 1;
-            button2.Text = "W";
-            button2.UseVisualStyleBackColor = false;
+            btn_w.BackColor = System.Drawing.Color.Lavender;
+            btn_w.Location = new System.Drawing.Point(130, 319);
+            btn_w.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btn_w.Name = "btn_w";
+            btn_w.Size = new System.Drawing.Size(40, 40);
+            btn_w.TabIndex = 1;
+            btn_w.Text = "W";
+            btn_w.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btn_e
             // 
-            button3.BackColor = System.Drawing.Color.Lavender;
-            button3.Location = new System.Drawing.Point(186, 319);
-            button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            button3.Name = "button3";
-            button3.Size = new System.Drawing.Size(40, 40);
-            button3.TabIndex = 2;
-            button3.Text = "E";
-            button3.UseVisualStyleBackColor = false;
+            btn_e.BackColor = System.Drawing.Color.Lavender;
+            btn_e.Location = new System.Drawing.Point(186, 319);
+            btn_e.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btn_e.Name = "btn_e";
+            btn_e.Size = new System.Drawing.Size(40, 40);
+            btn_e.TabIndex = 2;
+            btn_e.Text = "E";
+            btn_e.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btn_r
             // 
-            button4.BackColor = System.Drawing.Color.Lavender;
-            button4.Location = new System.Drawing.Point(242, 319);
-            button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            button4.Name = "button4";
-            button4.Size = new System.Drawing.Size(40, 40);
-            button4.TabIndex = 3;
-            button4.Text = "R";
-            button4.UseVisualStyleBackColor = false;
+            btn_r.BackColor = System.Drawing.Color.Lavender;
+            btn_r.Location = new System.Drawing.Point(242, 319);
+            btn_r.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btn_r.Name = "btn_r";
+            btn_r.Size = new System.Drawing.Size(40, 40);
+            btn_r.TabIndex = 3;
+            btn_r.Text = "R";
+            btn_r.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btn_t
             // 
-            button5.BackColor = System.Drawing.Color.Lavender;
-            button5.Location = new System.Drawing.Point(298, 319);
-            button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            button5.Name = "button5";
-            button5.Size = new System.Drawing.Size(40, 40);
-            button5.TabIndex = 4;
-            button5.Text = "T";
-            button5.UseVisualStyleBackColor = false;
+            btn_t.BackColor = System.Drawing.Color.Lavender;
+            btn_t.Location = new System.Drawing.Point(298, 319);
+            btn_t.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btn_t.Name = "btn_t";
+            btn_t.Size = new System.Drawing.Size(40, 40);
+            btn_t.TabIndex = 4;
+            btn_t.Text = "T";
+            btn_t.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // btn_y
             // 
-            button6.BackColor = System.Drawing.Color.Lavender;
-            button6.Location = new System.Drawing.Point(354, 319);
-            button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            button6.Name = "button6";
-            button6.Size = new System.Drawing.Size(40, 40);
-            button6.TabIndex = 5;
-            button6.Text = "Y";
-            button6.UseVisualStyleBackColor = false;
+            btn_y.BackColor = System.Drawing.Color.Lavender;
+            btn_y.Location = new System.Drawing.Point(354, 319);
+            btn_y.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btn_y.Name = "btn_y";
+            btn_y.Size = new System.Drawing.Size(40, 40);
+            btn_y.TabIndex = 5;
+            btn_y.Text = "Y";
+            btn_y.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // btn_u
             // 
-            button7.BackColor = System.Drawing.Color.Lavender;
-            button7.Location = new System.Drawing.Point(410, 319);
-            button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            button7.Name = "button7";
-            button7.Size = new System.Drawing.Size(40, 40);
-            button7.TabIndex = 6;
-            button7.Text = "U";
-            button7.UseVisualStyleBackColor = false;
+            btn_u.BackColor = System.Drawing.Color.Lavender;
+            btn_u.Location = new System.Drawing.Point(410, 319);
+            btn_u.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btn_u.Name = "btn_u";
+            btn_u.Size = new System.Drawing.Size(40, 40);
+            btn_u.TabIndex = 6;
+            btn_u.Text = "U";
+            btn_u.UseVisualStyleBackColor = false;
             // 
-            // button8
+            // btn_i
             // 
-            button8.BackColor = System.Drawing.Color.Lavender;
-            button8.Location = new System.Drawing.Point(466, 319);
-            button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            button8.Name = "button8";
-            button8.Size = new System.Drawing.Size(40, 40);
-            button8.TabIndex = 7;
-            button8.Text = "I";
-            button8.UseVisualStyleBackColor = false;
+            btn_i.BackColor = System.Drawing.Color.Lavender;
+            btn_i.Location = new System.Drawing.Point(466, 319);
+            btn_i.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btn_i.Name = "btn_i";
+            btn_i.Size = new System.Drawing.Size(40, 40);
+            btn_i.TabIndex = 7;
+            btn_i.Text = "I";
+            btn_i.UseVisualStyleBackColor = false;
             // 
-            // button9
+            // btn_o
             // 
-            button9.BackColor = System.Drawing.Color.Lavender;
-            button9.Location = new System.Drawing.Point(522, 319);
-            button9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            button9.Name = "button9";
-            button9.Size = new System.Drawing.Size(40, 40);
-            button9.TabIndex = 8;
-            button9.Text = "O";
-            button9.UseVisualStyleBackColor = false;
+            btn_o.BackColor = System.Drawing.Color.Lavender;
+            btn_o.Location = new System.Drawing.Point(522, 319);
+            btn_o.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btn_o.Name = "btn_o";
+            btn_o.Size = new System.Drawing.Size(40, 40);
+            btn_o.TabIndex = 8;
+            btn_o.Text = "O";
+            btn_o.UseVisualStyleBackColor = false;
             // 
-            // button10
+            // btn_p
             // 
-            button10.BackColor = System.Drawing.Color.Lavender;
-            button10.Location = new System.Drawing.Point(578, 319);
-            button10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            button10.Name = "button10";
-            button10.Size = new System.Drawing.Size(40, 40);
-            button10.TabIndex = 9;
-            button10.Text = "P";
-            button10.UseVisualStyleBackColor = false;
+            btn_p.BackColor = System.Drawing.Color.Lavender;
+            btn_p.Location = new System.Drawing.Point(578, 319);
+            btn_p.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btn_p.Name = "btn_p";
+            btn_p.Size = new System.Drawing.Size(40, 40);
+            btn_p.TabIndex = 9;
+            btn_p.Text = "P";
+            btn_p.UseVisualStyleBackColor = false;
             // 
-            // button12
+            // btn_l
             // 
-            button12.BackColor = System.Drawing.Color.Lavender;
-            button12.Location = new System.Drawing.Point(536, 364);
-            button12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            button12.Name = "button12";
-            button12.Size = new System.Drawing.Size(40, 40);
-            button12.TabIndex = 18;
-            button12.Text = "L";
-            button12.UseVisualStyleBackColor = false;
+            btn_l.BackColor = System.Drawing.Color.Lavender;
+            btn_l.Location = new System.Drawing.Point(536, 364);
+            btn_l.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btn_l.Name = "btn_l";
+            btn_l.Size = new System.Drawing.Size(40, 40);
+            btn_l.TabIndex = 18;
+            btn_l.Text = "L";
+            btn_l.UseVisualStyleBackColor = false;
             // 
-            // button13
+            // btn_k
             // 
-            button13.BackColor = System.Drawing.Color.Lavender;
-            button13.Location = new System.Drawing.Point(480, 364);
-            button13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            button13.Name = "button13";
-            button13.Size = new System.Drawing.Size(40, 40);
-            button13.TabIndex = 17;
-            button13.Text = "K";
-            button13.UseVisualStyleBackColor = false;
+            btn_k.BackColor = System.Drawing.Color.Lavender;
+            btn_k.Location = new System.Drawing.Point(480, 364);
+            btn_k.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btn_k.Name = "btn_k";
+            btn_k.Size = new System.Drawing.Size(40, 40);
+            btn_k.TabIndex = 17;
+            btn_k.Text = "K";
+            btn_k.UseVisualStyleBackColor = false;
             // 
-            // button14
+            // btn_j
             // 
-            button14.BackColor = System.Drawing.Color.Lavender;
-            button14.Location = new System.Drawing.Point(424, 364);
-            button14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            button14.Name = "button14";
-            button14.Size = new System.Drawing.Size(40, 40);
-            button14.TabIndex = 16;
-            button14.Text = "J";
-            button14.UseVisualStyleBackColor = false;
+            btn_j.BackColor = System.Drawing.Color.Lavender;
+            btn_j.Location = new System.Drawing.Point(424, 364);
+            btn_j.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btn_j.Name = "btn_j";
+            btn_j.Size = new System.Drawing.Size(40, 40);
+            btn_j.TabIndex = 16;
+            btn_j.Text = "J";
+            btn_j.UseVisualStyleBackColor = false;
             // 
-            // button15
+            // btn_h
             // 
-            button15.BackColor = System.Drawing.Color.Lavender;
-            button15.Location = new System.Drawing.Point(368, 364);
-            button15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            button15.Name = "button15";
-            button15.Size = new System.Drawing.Size(40, 40);
-            button15.TabIndex = 15;
-            button15.Text = "H";
-            button15.UseVisualStyleBackColor = false;
+            btn_h.BackColor = System.Drawing.Color.Lavender;
+            btn_h.Location = new System.Drawing.Point(368, 364);
+            btn_h.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btn_h.Name = "btn_h";
+            btn_h.Size = new System.Drawing.Size(40, 40);
+            btn_h.TabIndex = 15;
+            btn_h.Text = "H";
+            btn_h.UseVisualStyleBackColor = false;
             // 
-            // button16
+            // btn_g
             // 
-            button16.BackColor = System.Drawing.Color.Lavender;
-            button16.Location = new System.Drawing.Point(312, 364);
-            button16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            button16.Name = "button16";
-            button16.Size = new System.Drawing.Size(40, 40);
-            button16.TabIndex = 14;
-            button16.Text = "G";
-            button16.UseVisualStyleBackColor = false;
+            btn_g.BackColor = System.Drawing.Color.Lavender;
+            btn_g.Location = new System.Drawing.Point(312, 364);
+            btn_g.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btn_g.Name = "btn_g";
+            btn_g.Size = new System.Drawing.Size(40, 40);
+            btn_g.TabIndex = 14;
+            btn_g.Text = "G";
+            btn_g.UseVisualStyleBackColor = false;
             // 
-            // button17
+            // btn_f
             // 
-            button17.BackColor = System.Drawing.Color.Lavender;
-            button17.Location = new System.Drawing.Point(256, 364);
-            button17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            button17.Name = "button17";
-            button17.Size = new System.Drawing.Size(40, 40);
-            button17.TabIndex = 13;
-            button17.Text = "F";
-            button17.UseVisualStyleBackColor = false;
+            btn_f.BackColor = System.Drawing.Color.Lavender;
+            btn_f.Location = new System.Drawing.Point(256, 364);
+            btn_f.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btn_f.Name = "btn_f";
+            btn_f.Size = new System.Drawing.Size(40, 40);
+            btn_f.TabIndex = 13;
+            btn_f.Text = "F";
+            btn_f.UseVisualStyleBackColor = false;
             // 
-            // button18
+            // btn_d
             // 
-            button18.BackColor = System.Drawing.Color.Lavender;
-            button18.Location = new System.Drawing.Point(200, 364);
-            button18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            button18.Name = "button18";
-            button18.Size = new System.Drawing.Size(40, 40);
-            button18.TabIndex = 12;
-            button18.Text = "D";
-            button18.UseVisualStyleBackColor = false;
+            btn_d.BackColor = System.Drawing.Color.Lavender;
+            btn_d.Location = new System.Drawing.Point(200, 364);
+            btn_d.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btn_d.Name = "btn_d";
+            btn_d.Size = new System.Drawing.Size(40, 40);
+            btn_d.TabIndex = 12;
+            btn_d.Text = "D";
+            btn_d.UseVisualStyleBackColor = false;
             // 
-            // button19
+            // btn_s
             // 
-            button19.BackColor = System.Drawing.Color.Lavender;
-            button19.Location = new System.Drawing.Point(144, 364);
-            button19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            button19.Name = "button19";
-            button19.Size = new System.Drawing.Size(40, 40);
-            button19.TabIndex = 11;
-            button19.Text = "S";
-            button19.UseVisualStyleBackColor = false;
+            btn_s.BackColor = System.Drawing.Color.Lavender;
+            btn_s.Location = new System.Drawing.Point(144, 364);
+            btn_s.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btn_s.Name = "btn_s";
+            btn_s.Size = new System.Drawing.Size(40, 40);
+            btn_s.TabIndex = 11;
+            btn_s.Text = "S";
+            btn_s.UseVisualStyleBackColor = false;
             // 
-            // button20
+            // btn_a
             // 
-            button20.BackColor = System.Drawing.Color.Lavender;
-            button20.Location = new System.Drawing.Point(88, 364);
-            button20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            button20.Name = "button20";
-            button20.Size = new System.Drawing.Size(40, 40);
-            button20.TabIndex = 10;
-            button20.Text = "A";
-            button20.UseVisualStyleBackColor = false;
+            btn_a.BackColor = System.Drawing.Color.Lavender;
+            btn_a.Location = new System.Drawing.Point(88, 364);
+            btn_a.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btn_a.Name = "btn_a";
+            btn_a.Size = new System.Drawing.Size(40, 40);
+            btn_a.TabIndex = 10;
+            btn_a.Text = "A";
+            btn_a.UseVisualStyleBackColor = false;
             // 
-            // button24
+            // btn_m
             // 
-            button24.BackColor = System.Drawing.Color.Lavender;
-            button24.Location = new System.Drawing.Point(450, 409);
-            button24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            button24.Name = "button24";
-            button24.Size = new System.Drawing.Size(40, 40);
-            button24.TabIndex = 26;
-            button24.Text = "M";
-            button24.UseVisualStyleBackColor = false;
+            btn_m.BackColor = System.Drawing.Color.Lavender;
+            btn_m.Location = new System.Drawing.Point(450, 409);
+            btn_m.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btn_m.Name = "btn_m";
+            btn_m.Size = new System.Drawing.Size(40, 40);
+            btn_m.TabIndex = 26;
+            btn_m.Text = "M";
+            btn_m.UseVisualStyleBackColor = false;
             // 
-            // button25
+            // btn_n
             // 
-            button25.BackColor = System.Drawing.Color.Lavender;
-            button25.Location = new System.Drawing.Point(394, 409);
-            button25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            button25.Name = "button25";
-            button25.Size = new System.Drawing.Size(40, 40);
-            button25.TabIndex = 25;
-            button25.Text = "N";
-            button25.UseVisualStyleBackColor = false;
+            btn_n.BackColor = System.Drawing.Color.Lavender;
+            btn_n.Location = new System.Drawing.Point(394, 409);
+            btn_n.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btn_n.Name = "btn_n";
+            btn_n.Size = new System.Drawing.Size(40, 40);
+            btn_n.TabIndex = 25;
+            btn_n.Text = "N";
+            btn_n.UseVisualStyleBackColor = false;
             // 
-            // button26
+            // btn_b
             // 
-            button26.BackColor = System.Drawing.Color.Lavender;
-            button26.Location = new System.Drawing.Point(338, 409);
-            button26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            button26.Name = "button26";
-            button26.Size = new System.Drawing.Size(40, 40);
-            button26.TabIndex = 24;
-            button26.Text = "B";
-            button26.UseVisualStyleBackColor = false;
+            btn_b.BackColor = System.Drawing.Color.Lavender;
+            btn_b.Location = new System.Drawing.Point(338, 409);
+            btn_b.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btn_b.Name = "btn_b";
+            btn_b.Size = new System.Drawing.Size(40, 40);
+            btn_b.TabIndex = 24;
+            btn_b.Text = "B";
+            btn_b.UseVisualStyleBackColor = false;
             // 
-            // button27
+            // btn_v
             // 
-            button27.BackColor = System.Drawing.Color.Lavender;
-            button27.Location = new System.Drawing.Point(282, 409);
-            button27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            button27.Name = "button27";
-            button27.Size = new System.Drawing.Size(40, 40);
-            button27.TabIndex = 23;
-            button27.Text = "V";
-            button27.UseVisualStyleBackColor = false;
+            btn_v.BackColor = System.Drawing.Color.Lavender;
+            btn_v.Location = new System.Drawing.Point(282, 409);
+            btn_v.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btn_v.Name = "btn_v";
+            btn_v.Size = new System.Drawing.Size(40, 40);
+            btn_v.TabIndex = 23;
+            btn_v.Text = "V";
+            btn_v.UseVisualStyleBackColor = false;
             // 
-            // button28
+            // btn_c
             // 
-            button28.BackColor = System.Drawing.Color.Lavender;
-            button28.Location = new System.Drawing.Point(226, 409);
-            button28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            button28.Name = "button28";
-            button28.Size = new System.Drawing.Size(40, 40);
-            button28.TabIndex = 22;
-            button28.Text = "C";
-            button28.UseVisualStyleBackColor = false;
+            btn_c.BackColor = System.Drawing.Color.Lavender;
+            btn_c.Location = new System.Drawing.Point(226, 409);
+            btn_c.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btn_c.Name = "btn_c";
+            btn_c.Size = new System.Drawing.Size(40, 40);
+            btn_c.TabIndex = 22;
+            btn_c.Text = "C";
+            btn_c.UseVisualStyleBackColor = false;
             // 
-            // button29
+            // btn_x
             // 
-            button29.BackColor = System.Drawing.Color.Lavender;
-            button29.Location = new System.Drawing.Point(170, 409);
-            button29.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            button29.Name = "button29";
-            button29.Size = new System.Drawing.Size(40, 40);
-            button29.TabIndex = 21;
-            button29.Text = "X";
-            button29.UseVisualStyleBackColor = false;
+            btn_x.BackColor = System.Drawing.Color.Lavender;
+            btn_x.Location = new System.Drawing.Point(170, 409);
+            btn_x.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btn_x.Name = "btn_x";
+            btn_x.Size = new System.Drawing.Size(40, 40);
+            btn_x.TabIndex = 21;
+            btn_x.Text = "X";
+            btn_x.UseVisualStyleBackColor = false;
             // 
-            // button30
+            // btn_z
             // 
-            button30.BackColor = System.Drawing.Color.Lavender;
-            button30.Location = new System.Drawing.Point(114, 409);
-            button30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            button30.Name = "button30";
-            button30.Size = new System.Drawing.Size(40, 40);
-            button30.TabIndex = 20;
-            button30.Text = "Z";
-            button30.UseVisualStyleBackColor = false;
+            btn_z.BackColor = System.Drawing.Color.Lavender;
+            btn_z.Location = new System.Drawing.Point(114, 409);
+            btn_z.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btn_z.Name = "btn_z";
+            btn_z.Size = new System.Drawing.Size(40, 40);
+            btn_z.TabIndex = 20;
+            btn_z.Text = "Z";
+            btn_z.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -633,32 +633,32 @@ namespace Hangman
             this.Controls.Add(label2);
             this.Controls.Add(label1);
             this.Controls.Add(pictureBox1);
-            this.Controls.Add(button24);
-            this.Controls.Add(button25);
-            this.Controls.Add(button26);
-            this.Controls.Add(button27);
-            this.Controls.Add(button28);
-            this.Controls.Add(button29);
-            this.Controls.Add(button30);
-            this.Controls.Add(button12);
-            this.Controls.Add(button13);
-            this.Controls.Add(button14);
-            this.Controls.Add(button15);
-            this.Controls.Add(button16);
-            this.Controls.Add(button17);
-            this.Controls.Add(button18);
-            this.Controls.Add(button19);
-            this.Controls.Add(button20);
-            this.Controls.Add(button10);
-            this.Controls.Add(button9);
-            this.Controls.Add(button8);
-            this.Controls.Add(button7);
-            this.Controls.Add(button6);
-            this.Controls.Add(button5);
-            this.Controls.Add(button4);
-            this.Controls.Add(button3);
-            this.Controls.Add(button2);
-            this.Controls.Add(button1);
+            this.Controls.Add(btn_m);
+            this.Controls.Add(btn_n);
+            this.Controls.Add(btn_b);
+            this.Controls.Add(btn_v);
+            this.Controls.Add(btn_c);
+            this.Controls.Add(btn_x);
+            this.Controls.Add(btn_z);
+            this.Controls.Add(btn_l);
+            this.Controls.Add(btn_k);
+            this.Controls.Add(btn_j);
+            this.Controls.Add(btn_h);
+            this.Controls.Add(btn_g);
+            this.Controls.Add(btn_f);
+            this.Controls.Add(btn_d);
+            this.Controls.Add(btn_s);
+            this.Controls.Add(btn_a);
+            this.Controls.Add(btn_p);
+            this.Controls.Add(btn_o);
+            this.Controls.Add(btn_i);
+            this.Controls.Add(btn_u);
+            this.Controls.Add(btn_y);
+            this.Controls.Add(btn_t);
+            this.Controls.Add(btn_r);
+            this.Controls.Add(btn_e);
+            this.Controls.Add(btn_w);
+            this.Controls.Add(btn_q);
             this.Controls.Add(panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
