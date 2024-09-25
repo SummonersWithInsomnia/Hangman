@@ -661,6 +661,9 @@ namespace Hangman
             this.Controls.Add(button1);
             this.Controls.Add(panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(710, 577);
+            this.MinimumSize = new System.Drawing.Size(710, 577);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hangman [Created by Summoners With Insomnia]";
