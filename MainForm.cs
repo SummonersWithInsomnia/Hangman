@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -31,9 +32,11 @@ namespace Hangman
             }
         }
 
-        private void btn_how_to_play_Click(object sender, EventArgs e)
+        private void btn_back_to_menu_Click(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            Thread thread = new Thread(delegate () { new GameTitle().ShowDialog(); });
+            thread.Start();
+            this.Close();
         }
     }
 }

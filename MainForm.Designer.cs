@@ -76,7 +76,8 @@ namespace Hangman
             System.Windows.Forms.Label lb_category_value;
             System.Windows.Forms.PictureBox pb_hanger;
             System.Windows.Forms.Panel pn_bar;
-            System.Windows.Forms.Button btn_how_to_play;
+            System.Windows.Forms.Button btn_back_to_menu;
+            System.Windows.Forms.Button button1;
             btn_q = new System.Windows.Forms.Button();
             btn_w = new System.Windows.Forms.Button();
             btn_e = new System.Windows.Forms.Button();
@@ -120,7 +121,8 @@ namespace Hangman
             lb_category_value = new System.Windows.Forms.Label();
             pb_hanger = new System.Windows.Forms.PictureBox();
             pn_bar = new System.Windows.Forms.Panel();
-            btn_how_to_play = new System.Windows.Forms.Button();
+            btn_back_to_menu = new System.Windows.Forms.Button();
+            button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(pb_hanger)).BeginInit();
             pn_bar.SuspendLayout();
             this.SuspendLayout();
@@ -620,23 +622,36 @@ namespace Hangman
             // pn_bar
             // 
             pn_bar.BackgroundImage = global::Hangman.Properties.Resources.brick_panel;
-            pn_bar.Controls.Add(btn_how_to_play);
+            pn_bar.Controls.Add(button1);
+            pn_bar.Controls.Add(btn_back_to_menu);
             pn_bar.Location = new System.Drawing.Point(2, 489);
             pn_bar.Name = "pn_bar";
             pn_bar.Size = new System.Drawing.Size(690, 39);
             pn_bar.TabIndex = 43;
             // 
-            // btn_how_to_play
+            // btn_back_to_menu
             // 
-            btn_how_to_play.BackColor = System.Drawing.Color.Khaki;
-            btn_how_to_play.Location = new System.Drawing.Point(546, 5);
-            btn_how_to_play.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            btn_how_to_play.Name = "btn_how_to_play";
-            btn_how_to_play.Size = new System.Drawing.Size(107, 30);
-            btn_how_to_play.TabIndex = 46;
-            btn_how_to_play.Text = "How to Play";
-            btn_how_to_play.UseVisualStyleBackColor = false;
-            btn_how_to_play.Click += new System.EventHandler(this.btn_how_to_play_Click);
+            btn_back_to_menu.BackColor = System.Drawing.Color.Khaki;
+            btn_back_to_menu.Location = new System.Drawing.Point(551, 5);
+            btn_back_to_menu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btn_back_to_menu.Name = "btn_back_to_menu";
+            btn_back_to_menu.Size = new System.Drawing.Size(107, 30);
+            btn_back_to_menu.TabIndex = 46;
+            btn_back_to_menu.Text = "Back to Menu";
+            btn_back_to_menu.UseVisualStyleBackColor = false;
+            btn_back_to_menu.Click += new System.EventHandler(this.btn_back_to_menu_Click);
+
+            // 
+            // button1
+            // 
+            button1.BackColor = System.Drawing.Color.Khaki;
+            button1.Location = new System.Drawing.Point(134, 4);
+            button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            button1.Name = "button1";
+            button1.Size = new System.Drawing.Size(107, 30);
+            button1.TabIndex = 47;
+            button1.Text = "How to Play";
+            button1.UseVisualStyleBackColor = false;
             // 
             // MainForm
             // 
@@ -698,6 +713,7 @@ namespace Hangman
             pn_bar.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
