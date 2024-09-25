@@ -135,6 +135,7 @@ namespace Hangman
             btn_q.TabIndex = 0;
             btn_q.Text = "Q";
             btn_q.UseVisualStyleBackColor = false;
+            btn_q.Click += new System.EventHandler(this.inputFromKeyboard);
             // 
             // btn_w
             // 
@@ -146,6 +147,7 @@ namespace Hangman
             btn_w.TabIndex = 1;
             btn_w.Text = "W";
             btn_w.UseVisualStyleBackColor = false;
+            btn_w.Click += new System.EventHandler(this.inputFromKeyboard);
             // 
             // btn_e
             // 
@@ -157,6 +159,7 @@ namespace Hangman
             btn_e.TabIndex = 2;
             btn_e.Text = "E";
             btn_e.UseVisualStyleBackColor = false;
+            btn_e.Click += new System.EventHandler(this.inputFromKeyboard);
             // 
             // btn_r
             // 
@@ -168,6 +171,7 @@ namespace Hangman
             btn_r.TabIndex = 3;
             btn_r.Text = "R";
             btn_r.UseVisualStyleBackColor = false;
+            btn_r.Click += new System.EventHandler(this.inputFromKeyboard);
             // 
             // btn_t
             // 
@@ -179,6 +183,7 @@ namespace Hangman
             btn_t.TabIndex = 4;
             btn_t.Text = "T";
             btn_t.UseVisualStyleBackColor = false;
+            btn_t.Click += new System.EventHandler(this.inputFromKeyboard);
             // 
             // btn_y
             // 
@@ -190,6 +195,7 @@ namespace Hangman
             btn_y.TabIndex = 5;
             btn_y.Text = "Y";
             btn_y.UseVisualStyleBackColor = false;
+            btn_y.Click += new System.EventHandler(this.inputFromKeyboard);
             // 
             // btn_u
             // 
@@ -201,6 +207,7 @@ namespace Hangman
             btn_u.TabIndex = 6;
             btn_u.Text = "U";
             btn_u.UseVisualStyleBackColor = false;
+            btn_u.Click += new System.EventHandler(this.inputFromKeyboard);
             // 
             // btn_i
             // 
@@ -212,6 +219,7 @@ namespace Hangman
             btn_i.TabIndex = 7;
             btn_i.Text = "I";
             btn_i.UseVisualStyleBackColor = false;
+            btn_i.Click += new System.EventHandler(this.inputFromKeyboard);
             // 
             // btn_o
             // 
@@ -223,6 +231,7 @@ namespace Hangman
             btn_o.TabIndex = 8;
             btn_o.Text = "O";
             btn_o.UseVisualStyleBackColor = false;
+            btn_o.Click += new System.EventHandler(this.inputFromKeyboard);
             // 
             // btn_p
             // 
@@ -234,6 +243,7 @@ namespace Hangman
             btn_p.TabIndex = 9;
             btn_p.Text = "P";
             btn_p.UseVisualStyleBackColor = false;
+            btn_p.Click += new System.EventHandler(this.inputFromKeyboard);
             // 
             // btn_l
             // 
@@ -245,6 +255,7 @@ namespace Hangman
             btn_l.TabIndex = 18;
             btn_l.Text = "L";
             btn_l.UseVisualStyleBackColor = false;
+            btn_l.Click += new System.EventHandler(this.inputFromKeyboard);
             // 
             // btn_k
             // 
@@ -256,6 +267,7 @@ namespace Hangman
             btn_k.TabIndex = 17;
             btn_k.Text = "K";
             btn_k.UseVisualStyleBackColor = false;
+            btn_k.Click += new System.EventHandler(this.inputFromKeyboard);
             // 
             // btn_j
             // 
@@ -267,6 +279,7 @@ namespace Hangman
             btn_j.TabIndex = 16;
             btn_j.Text = "J";
             btn_j.UseVisualStyleBackColor = false;
+            btn_j.Click += new System.EventHandler(this.inputFromKeyboard);
             // 
             // btn_h
             // 
@@ -278,6 +291,7 @@ namespace Hangman
             btn_h.TabIndex = 15;
             btn_h.Text = "H";
             btn_h.UseVisualStyleBackColor = false;
+            btn_h.Click += new System.EventHandler(this.inputFromKeyboard);
             // 
             // btn_g
             // 
@@ -289,6 +303,7 @@ namespace Hangman
             btn_g.TabIndex = 14;
             btn_g.Text = "G";
             btn_g.UseVisualStyleBackColor = false;
+            btn_g.Click += new System.EventHandler(this.inputFromKeyboard);
             // 
             // btn_f
             // 
@@ -300,6 +315,7 @@ namespace Hangman
             btn_f.TabIndex = 13;
             btn_f.Text = "F";
             btn_f.UseVisualStyleBackColor = false;
+            btn_f.Click += new System.EventHandler(this.inputFromKeyboard);
             // 
             // btn_d
             // 
@@ -311,6 +327,7 @@ namespace Hangman
             btn_d.TabIndex = 12;
             btn_d.Text = "D";
             btn_d.UseVisualStyleBackColor = false;
+            btn_d.Click += new System.EventHandler(this.inputFromKeyboard);
             // 
             // btn_s
             // 
@@ -322,6 +339,7 @@ namespace Hangman
             btn_s.TabIndex = 11;
             btn_s.Text = "S";
             btn_s.UseVisualStyleBackColor = false;
+            btn_s.Click += new System.EventHandler(this.inputFromKeyboard);
             // 
             // btn_a
             // 
@@ -333,6 +351,7 @@ namespace Hangman
             btn_a.TabIndex = 10;
             btn_a.Text = "A";
             btn_a.UseVisualStyleBackColor = false;
+            btn_a.Click += new System.EventHandler(this.inputFromKeyboard);
             // 
             // btn_m
             // 
@@ -344,6 +363,7 @@ namespace Hangman
             btn_m.TabIndex = 26;
             btn_m.Text = "M";
             btn_m.UseVisualStyleBackColor = false;
+            btn_m.Click += new System.EventHandler(this.inputFromKeyboard);
             // 
             // btn_n
             // 
@@ -355,6 +375,7 @@ namespace Hangman
             btn_n.TabIndex = 25;
             btn_n.Text = "N";
             btn_n.UseVisualStyleBackColor = false;
+            btn_n.Click += new System.EventHandler(this.inputFromKeyboard);
             // 
             // btn_b
             // 
@@ -366,6 +387,7 @@ namespace Hangman
             btn_b.TabIndex = 24;
             btn_b.Text = "B";
             btn_b.UseVisualStyleBackColor = false;
+            btn_b.Click += new System.EventHandler(this.inputFromKeyboard);
             // 
             // btn_v
             // 
@@ -377,6 +399,7 @@ namespace Hangman
             btn_v.TabIndex = 23;
             btn_v.Text = "V";
             btn_v.UseVisualStyleBackColor = false;
+            btn_v.Click += new System.EventHandler(this.inputFromKeyboard);
             // 
             // btn_c
             // 
@@ -388,6 +411,7 @@ namespace Hangman
             btn_c.TabIndex = 22;
             btn_c.Text = "C";
             btn_c.UseVisualStyleBackColor = false;
+            btn_c.Click += new System.EventHandler(this.inputFromKeyboard);
             // 
             // btn_x
             // 
@@ -399,6 +423,7 @@ namespace Hangman
             btn_x.TabIndex = 21;
             btn_x.Text = "X";
             btn_x.UseVisualStyleBackColor = false;
+            btn_x.Click += new System.EventHandler(this.inputFromKeyboard);
             // 
             // btn_z
             // 
@@ -410,6 +435,7 @@ namespace Hangman
             btn_z.TabIndex = 20;
             btn_z.Text = "Z";
             btn_z.UseVisualStyleBackColor = false;
+            btn_z.Click += new System.EventHandler(this.inputFromKeyboard);
             // 
             // lb_score
             // 

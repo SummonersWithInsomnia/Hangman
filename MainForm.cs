@@ -16,9 +16,11 @@ namespace Hangman
         {
             InitializeComponent();
         }
-        private void keyboard(object sender, EventArgs e)
+        
+        private void inputFromKeyboard(object sender, EventArgs e)
         {
-
+            Button b = (Button)sender;
+            Console.WriteLine("Input form Keyboard: " + b.Text);
         }
 
         private void button11_Click(object sender, EventArgs e)
