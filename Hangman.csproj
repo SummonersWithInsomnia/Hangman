@@ -102,25 +102,25 @@
     <None Include="Resources\hanging.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Hangman0.png" />
+    <None Include="Resources\hangman0.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Hangman1.png" />
+    <None Include="Resources\hangman1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Hangman2.png" />
+    <None Include="Resources\hangman2.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Hangman3.png" />
+    <None Include="Resources\hangman3.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Hangman4.png" />
+    <None Include="Resources\hangman4.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Hangman5.png" />
+    <None Include="Resources\hangman5.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Hangman6.png" />
+    <None Include="Resources\hangman6.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\background.jpg" />
