@@ -441,7 +441,7 @@ namespace Hangman
             // 
             lb_score.AutoSize = true;
             lb_score.BackColor = System.Drawing.Color.Transparent;
-            lb_score.Font = new System.Drawing.Font("Futura Bk BT", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lb_score.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             lb_score.Location = new System.Drawing.Point(502, 26);
             lb_score.Name = "lb_score";
             lb_score.Size = new System.Drawing.Size(89, 29);
@@ -579,7 +579,7 @@ namespace Hangman
             btn_about_us.TabIndex = 42;
             btn_about_us.Text = "About Us";
             btn_about_us.UseVisualStyleBackColor = false;
-            btn_about_us.Click += new System.EventHandler(this.button11_Click);
+            btn_about_us.Click += new System.EventHandler(this.btn_about_us_Click);
             // 
             // lb_category
             // 
@@ -636,6 +636,7 @@ namespace Hangman
             btn_how_to_play.TabIndex = 46;
             btn_how_to_play.Text = "How to Play";
             btn_how_to_play.UseVisualStyleBackColor = false;
+            btn_how_to_play.Click += new System.EventHandler(this.btn_how_to_play_Click);
             // 
             // MainForm
             // 

@@ -10,16 +10,18 @@ using System.Windows.Forms;
 
 namespace Hangman
 {
-    public partial class Form1 : Form
+    public partial class AboutUsForm : Form
     {
-        public Form1()
+        public AboutUsForm()
         {
             InitializeComponent();
+            this.TopMost = true;
+            this.StartPosition = FormStartPosition.CenterParent;
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        
+        private void btn_back_to_game_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Dispose();
         }
     }
 }

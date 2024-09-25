@@ -22,12 +22,18 @@ namespace Hangman
             Button b = (Button)sender;
             Console.WriteLine("Input form Keyboard: " + b.Text);
         }
-
-        private void button11_Click(object sender, EventArgs e)
+        
+        private void btn_about_us_Click(object sender, EventArgs e)
         {
-            Form1 m = new Form1();
-            m.Show();
+            using (AboutUsForm aboutUsForm = new AboutUsForm())
+            {
+                aboutUsForm.ShowDialog();
+            }
         }
 
+        private void btn_how_to_play_Click(object sender, EventArgs e)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
