@@ -124,26 +124,26 @@
   <data name="background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Hangman2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Hangman2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hangman2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hangman2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Hangman1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Hangman1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hangman1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hangman1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Hangman4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Hangman4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hangman4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hangman4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Hangman3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Hangman3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hangman3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hangman3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Hangman6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Hangman6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hangman6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hangman6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Hangman5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Hangman5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hangman5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hangman5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Hangman0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Hangman0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hangman0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hangman0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hanging" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hanging.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

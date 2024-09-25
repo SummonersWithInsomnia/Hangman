@@ -608,7 +608,7 @@ namespace Hangman
             pb_hanger.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             pb_hanger.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             pb_hanger.ErrorImage = null;
-            pb_hanger.Image = global::Hangman.Properties.Resources.Hangman0;
+            pb_hanger.Image = global::Hangman.Properties.Resources.hangman0;
             pb_hanger.Location = new System.Drawing.Point(61, 26);
             pb_hanger.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             pb_hanger.Name = "pb_hanger";
@@ -693,7 +693,7 @@ namespace Hangman
             this.MinimumSize = new System.Drawing.Size(710, 577);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Hangman [Created by Summoners With Insomnia]";
+            this.Text = "Hangman";
             ((System.ComponentModel.ISupportInitialize)(pb_hanger)).EndInit();
             pn_bar.ResumeLayout(false);
             this.ResumeLayout(false);
