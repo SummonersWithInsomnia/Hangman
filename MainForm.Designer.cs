@@ -2,6 +2,8 @@
 using System.Drawing;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using System;
+using System.Diagnostics.Eventing.Reader;
 
 namespace Hangman
 {
@@ -24,14 +26,57 @@ namespace Hangman
             }
             base.Dispose(disposing);
         }
-
-        #region Windows Form Designer generated code
-
         /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
+        ///  Clean up any resources being used.
         /// </summary>
-        private void InitializeComponent()
+        /// 
+
+        private System.Windows.Forms.PictureBox pb_hanger;
+        //Array to hold hangman drawings
+        private Bitmap[] hangmanPhotos =
+        {
+            Hangman.Properties.Resources.hangman0,
+            Hangman.Properties.Resources.hangman1,
+            Hangman.Properties.Resources.hangman2,
+            Hangman.Properties.Resources.hangman3,
+            Hangman.Properties.Resources.hangman4,
+            Hangman.Properties.Resources.hangman5,
+            Hangman.Properties.Resources.hangman6,
+        };
+
+        //Track incorrect guesses though keyboard clicks
+        private int wrongLetter = 0;
+
+        //Function to handle wrong letter guesses
+        private void guessCounter()
+        {
+            wrongLetter++;
+
+            if (wrongLetter < hangmanPhotos.Length)
+            {
+                pb_hanger.Image = hangmanPhotos[wrongLetter];
+            }
+       
+        else
+        {
+            // If max guesses are reached, show game over message
+            MessageBox.Show("Game Over!");
+
+                // or we add a button to reset the game and/or back to main menu
+                //ResetGame();
+            }
+        }
+
+
+#region Windows Form Designer generated code
+
+/// <summary>
+/// Required method for Designer support - do not modify
+/// the contents of this method with the code editor.
+/// </summary>
+/// 
+
+private void InitializeComponent()
         {
             System.Windows.Forms.Button btn_q;
             System.Windows.Forms.Button btn_w;
