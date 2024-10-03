@@ -17,7 +17,43 @@ namespace Hangman
         {
             InitializeComponent();
         }
-        
+
+        private System.Windows.Forms.PictureBox pb_hanger;
+        //Array to hold hangman drawings
+        private Bitmap[] hangmanPhotos =
+        {
+            Hangman.Properties.Resources.hangman0,
+            Hangman.Properties.Resources.hangman1,
+            Hangman.Properties.Resources.hangman2,
+            Hangman.Properties.Resources.hangman3,
+            Hangman.Properties.Resources.hangman4,
+            Hangman.Properties.Resources.hangman5,
+            Hangman.Properties.Resources.hangman6,
+        };
+
+        //Track incorrect guesses though keyboard clicks
+        private int wrongLetter = 0;
+
+        //Function to handle wrong letter guesses
+        private void guessCounter()
+        {
+            wrongLetter++;
+
+            if (wrongLetter < hangmanPhotos.Length)
+            {
+                pb_hanger.Image = hangmanPhotos[wrongLetter];
+            }
+
+            else
+            {
+                // If max guesses are reached, show game over message
+                MessageBox.Show("Game Over!");
+
+                // or we add a button to reset the game and/or back to main menu
+                //ResetGame();
+            }
+        }
+
         private void inputFromKeyboard(object sender, EventArgs e)
         {
             Button b = (Button)sender;
@@ -37,6 +73,11 @@ namespace Hangman
             Thread thread = new Thread(delegate () { new GameTitle().ShowDialog(); });
             thread.Start();
             this.Close();
+        }
+
+        private void pb_hanger_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

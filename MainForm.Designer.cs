@@ -31,41 +31,7 @@ namespace Hangman
         /// </summary>
         /// 
 
-        private System.Windows.Forms.PictureBox pb_hanger;
-        //Array to hold hangman drawings
-        private Bitmap[] hangmanPhotos =
-        {
-            Hangman.Properties.Resources.hangman0,
-            Hangman.Properties.Resources.hangman1,
-            Hangman.Properties.Resources.hangman2,
-            Hangman.Properties.Resources.hangman3,
-            Hangman.Properties.Resources.hangman4,
-            Hangman.Properties.Resources.hangman5,
-            Hangman.Properties.Resources.hangman6,
-        };
-
-        //Track incorrect guesses though keyboard clicks
-        private int wrongLetter = 0;
-
-        //Function to handle wrong letter guesses
-        private void guessCounter()
-        {
-            wrongLetter++;
-
-            if (wrongLetter < hangmanPhotos.Length)
-            {
-                pb_hanger.Image = hangmanPhotos[wrongLetter];
-            }
-       
-        else
-        {
-            // If max guesses are reached, show game over message
-            MessageBox.Show("Game Over!");
-
-                // or we add a button to reset the game and/or back to main menu
-                //ResetGame();
-            }
-        }
+        
 
 
 #region Windows Form Designer generated code
@@ -121,8 +87,8 @@ private void InitializeComponent()
             System.Windows.Forms.Label lb_category_value;
             System.Windows.Forms.PictureBox pb_hanger;
             System.Windows.Forms.Panel pn_bar;
-            System.Windows.Forms.Button btn_back_to_menu;
             System.Windows.Forms.Button button1;
+            System.Windows.Forms.Button btn_back_to_menu;
             btn_q = new System.Windows.Forms.Button();
             btn_w = new System.Windows.Forms.Button();
             btn_e = new System.Windows.Forms.Button();
@@ -166,8 +132,8 @@ private void InitializeComponent()
             lb_category_value = new System.Windows.Forms.Label();
             pb_hanger = new System.Windows.Forms.PictureBox();
             pn_bar = new System.Windows.Forms.Panel();
-            btn_back_to_menu = new System.Windows.Forms.Button();
             button1 = new System.Windows.Forms.Button();
+            btn_back_to_menu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(pb_hanger)).BeginInit();
             pn_bar.SuspendLayout();
             this.SuspendLayout();
@@ -663,6 +629,7 @@ private void InitializeComponent()
             pb_hanger.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             pb_hanger.TabIndex = 29;
             pb_hanger.TabStop = false;
+            pb_hanger.Click += new System.EventHandler(this.pb_hanger_Click);
             // 
             // pn_bar
             // 
@@ -673,6 +640,17 @@ private void InitializeComponent()
             pn_bar.Name = "pn_bar";
             pn_bar.Size = new System.Drawing.Size(690, 39);
             pn_bar.TabIndex = 43;
+            // 
+            // button1
+            // 
+            button1.BackColor = System.Drawing.Color.Khaki;
+            button1.Location = new System.Drawing.Point(134, 4);
+            button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            button1.Name = "button1";
+            button1.Size = new System.Drawing.Size(107, 30);
+            button1.TabIndex = 47;
+            button1.Text = "How to Play";
+            button1.UseVisualStyleBackColor = false;
             // 
             // btn_back_to_menu
             // 
@@ -685,18 +663,6 @@ private void InitializeComponent()
             btn_back_to_menu.Text = "Back to Menu";
             btn_back_to_menu.UseVisualStyleBackColor = false;
             btn_back_to_menu.Click += new System.EventHandler(this.btn_back_to_menu_Click);
-
-            // 
-            // button1
-            // 
-            button1.BackColor = System.Drawing.Color.Khaki;
-            button1.Location = new System.Drawing.Point(134, 4);
-            button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            button1.Name = "button1";
-            button1.Size = new System.Drawing.Size(107, 30);
-            button1.TabIndex = 47;
-            button1.Text = "How to Play";
-            button1.UseVisualStyleBackColor = false;
             // 
             // MainForm
             // 
