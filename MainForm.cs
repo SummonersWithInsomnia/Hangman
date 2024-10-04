@@ -1,23 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Hangman
 {
     public partial class MainForm : Form
     {
-        public MainForm()
-        {
-            InitializeComponent();
-            InitializeGameLabels();
-        }
+        // Fields to store parameters
+        private string playerName;
+        private string selectedDifficulty;
+        private string selectedCategory;
 
         // Labels for Lives, Attempts, and Wins
         private Label lblLives;
@@ -29,7 +23,7 @@ namespace Hangman
         private int attempts = 0; // Track the number of attempts
         private int wins = 0; // Track the number of wins
 
-        private System.Windows.Forms.PictureBox pb_hanger;
+        private PictureBox pb_hanger; // Initialize the PictureBox
         // Array to hold hangman drawings
         private Bitmap[] hangmanPhotos =
         {
@@ -49,24 +43,30 @@ namespace Hangman
         private void InitializeGameLabels()
         {
             // Label for Lives
-            lblLives = new Label();
-            lblLives.Text = $"Lives: {lives}";
-            lblLives.Location = new Point(10, 10); // Adjust position as necessary
-            lblLives.AutoSize = true;
+            lblLives = new Label
+            {
+                Text = $"Lives: {lives}",
+                Location = new Point(10, 10),
+                AutoSize = true
+            };
             this.Controls.Add(lblLives);
 
             // Label for Attempts
-            lblAttempts = new Label();
-            lblAttempts.Text = $"Attempts: {attempts}";
-            lblAttempts.Location = new Point(10, 30); // Adjust position as necessary
-            lblAttempts.AutoSize = true;
+            lblAttempts = new Label
+            {
+                Text = $"Attempts: {attempts}",
+                Location = new Point(10, 30),
+                AutoSize = true
+            };
             this.Controls.Add(lblAttempts);
 
             // Label for Wins
-            lblWins = new Label();
-            lblWins.Text = $"Wins: {wins}";
-            lblWins.Location = new Point(10, 50); // Adjust position as necessary
-            lblWins.AutoSize = true;
+            lblWins = new Label
+            {
+                Text = $"Wins: {wins}",
+                Location = new Point(10, 50),
+                AutoSize = true
+            };
             this.Controls.Add(lblWins);
         }
 
@@ -105,6 +105,9 @@ namespace Hangman
             lives = 6;
             pb_hanger.Image = hangmanPhotos[0];
             UpdateGameLabels();
+
+            // Example usage of the parameters
+            MessageBox.Show($"Welcome, {playerName}! You are playing with {selectedDifficulty} difficulty in the {selectedCategory} category.");
         }
 
         // Call this function when the player wins the game
@@ -174,7 +177,30 @@ namespace Hangman
 
         private void pb_hanger_Click(object sender, EventArgs e)
         {
+            // Handle PictureBox click if needed
+        }
 
+        // Constructor to receive parameters
+        public MainForm(string name, string difficulty, string category)
+        {
+            InitializeComponent();
+            playerName = name; // Store the player's name
+            selectedDifficulty = difficulty; // Store the selected difficulty
+            selectedCategory = category; // Store the selected category
+
+            InitializeGameLabels();
+
+            // Initialize PictureBox
+            pb_hanger = new PictureBox
+            {
+                Size = new Size(200, 200), // Adjust size as needed
+                Location = new Point(100, 100), // Adjust location as needed
+                Image = hangmanPhotos[0], // Set initial image
+                SizeMode = PictureBoxSizeMode.StretchImage // Set size mode
+            };
+
+            // Add PictureBox to the form
+            this.Controls.Add(pb_hanger);
         }
     }
 }

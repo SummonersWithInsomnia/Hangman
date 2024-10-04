@@ -1,83 +1,93 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Drawing.Imaging;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Timer = System.Windows.Forms.Timer;
 
 namespace Hangman
 {
     public partial class GameTitle : Form
     {
-        private int pbLogoOpacity = 0;
-        private const int imgFadeSpeed = 50;
-
-        private Timer pbLogoFadeTimer;
+        // Declare ComboBox and TextBox for player input
+        private ComboBox cmbDifficulty;
+        private ComboBox cmbCategory;
+        private TextBox txtPlayerName;
 
         public GameTitle()
         {
             InitializeComponent();
-
-            pbLogoFadeTimer = new Timer { Interval = 300 };
-            pbLogoFadeTimer.Tick += pbLogoFadeTimer_Tick;
-            pbLogoFadeTimer.Start();
+            InitializeControls(); // Initialize controls
+            LoadCategories();
+            LoadDifficulties();
         }
 
-        // Timer tick event handler for fading the image
-        private void pbLogoFadeTimer_Tick(object sender, EventArgs e)
+        private void InitializeControls()
         {
-            if (pbLogoOpacity < 255)
+            // Initialize and set properties for the player name TextBox
+            txtPlayerName = new TextBox
             {
-                pbLogoOpacity += imgFadeSpeed;
-                if (pbLogoOpacity > 255) pbLogoOpacity = 255;
+                Location = new Point(10, 10), // Set appropriate location
+                Width = 200 // Set width
+            };
+            this.Controls.Add(txtPlayerName);
 
-                pb_logo.Image = applyOpacity(pb_logo.Image, pbLogoOpacity / 255f); // Opacity should be in the range of 0.0 - 1.0
-            }
-            else
+            // Initialize and set properties for the difficulty ComboBox
+            cmbDifficulty = new ComboBox
             {
-                pbLogoFadeTimer.Stop();
-                this.Controls.Add(this.lb_copyright);
-                this.Controls.Add(this.lb_start_game);
-            }
+                Location = new Point(10, 40), // Set appropriate location
+                Width = 200 // Set width
+            };
+            this.Controls.Add(cmbDifficulty);
+
+            // Initialize and set properties for the category ComboBox
+            cmbCategory = new ComboBox
+            {
+                Location = new Point(10, 70), // Set appropriate location
+                Width = 200 // Set width
+            };
+            this.Controls.Add(cmbCategory);
         }
 
-        // Method to apply opacity using a ColorMatrix
-        private Image applyOpacity(Image img, float opacity)
+        private void LoadCategories()
         {
-            if (img == null) return null;
-
-            Bitmap bmp = new Bitmap(img.Width, img.Height);
-            using (Graphics g = Graphics.FromImage(bmp))
-            {
-                ColorMatrix matrix = new ColorMatrix();
-                matrix.Matrix33 = opacity; // Set opacity
-
-                ImageAttributes attributes = new ImageAttributes();
-                attributes.SetColorMatrix(matrix, ColorMatrixFlag.Default, ColorAdjustType.Bitmap);
-
-                g.DrawImage(img, new Rectangle(0, 0, bmp.Width, bmp.Height), 0, 0, img.Width, img.Height, GraphicsUnit.Pixel, attributes);
-            }
-
-            return bmp;
+            // Load categories into the combo box
+            cmbCategory.Items.Add("Food");
+            cmbCategory.Items.Add("Dessert");
+            cmbCategory.Items.Add("Animals");
+            cmbCategory.Items.Add("Countries");
+            cmbCategory.Items.Add("Type of Vehicle");
+            cmbCategory.Items.Add("Colors");
+            cmbCategory.Items.Add("Sports");
+            cmbCategory.Items.Add("Instrument");
         }
 
-        // Method to start the game when a button or label is clicked
-        private void startGame(object sender, EventArgs e)
+        private void LoadDifficulties()
         {
-            // Pass initial values for lives, attempts, and wins
-            int initialLives = 6;
-            int initialAttempts = 0;
-            int initialWins = 0;
+            // Load difficulties into the combo box
+            cmbDifficulty.Items.Add("Easy");
+            cmbDifficulty.Items.Add("Medium");
+            cmbDifficulty.Items.Add("Hard");
+        }
 
-            Thread thread = new Thread(delegate () { new MainForm(initialLives, initialAttempts, initialWins).ShowDialog(); });
-            thread.Start();
-            this.Close();
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            string playerName = txtPlayerName.Text;
+            string selectedDifficulty = cmbDifficulty.SelectedItem?.ToString();
+            string selectedCategory = cmbCategory.SelectedItem?.ToString();
+
+            if (string.IsNullOrEmpty(playerName) || string.IsNullOrEmpty(selectedDifficulty) || string.IsNullOrEmpty(selectedCategory))
+            {
+                MessageBox.Show("Please fill all fields before starting.");
+                return;
+            }
+
+            // Start the game
+            MainForm mainForm = new MainForm(playerName, selectedDifficulty, selectedCategory);
+            mainForm.Show();
+            this.Hide();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
