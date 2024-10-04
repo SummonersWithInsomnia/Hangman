@@ -227,10 +227,5 @@ namespace Hangman
             thread.Start();
             this.Close();
         }
-
-        private void pb_hanger_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
