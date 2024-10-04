@@ -29,13 +29,15 @@ namespace Hangman
             pbLogoFadeTimer.Start();
         }
 
+        // Timer tick event handler for fading the image
         private void pbLogoFadeTimer_Tick(object sender, EventArgs e)
         {
             if (pbLogoOpacity < 255)
             {
                 pbLogoOpacity += imgFadeSpeed;
                 if (pbLogoOpacity > 255) pbLogoOpacity = 255;
-                pb_logo.Image = applyOpacity(pb_logo.Image, pbLogoOpacity);
+
+                pb_logo.Image = applyOpacity(pb_logo.Image, pbLogoOpacity / 255f); // Opacity should be in the range of 0.0 - 1.0
             }
             else
             {
@@ -45,28 +47,35 @@ namespace Hangman
             }
         }
 
+        // Method to apply opacity using a ColorMatrix
         private Image applyOpacity(Image img, float opacity)
         {
-            Bitmap bmp = new Bitmap(img);
+            if (img == null) return null;
+
+            Bitmap bmp = new Bitmap(img.Width, img.Height);
             using (Graphics g = Graphics.FromImage(bmp))
             {
-                for (int y = 0; y < bmp.Height; y++)
-                {
-                    for (int x = 0; x < bmp.Width; x++)
-                    {
-                        Color pixelColor = bmp.GetPixel(x, y);
-                        Color newColor = Color.FromArgb((int)(opacity), pixelColor);
-                        bmp.SetPixel(x, y, newColor);
-                    }
-                }
+                ColorMatrix matrix = new ColorMatrix();
+                matrix.Matrix33 = opacity; // Set opacity
+
+                ImageAttributes attributes = new ImageAttributes();
+                attributes.SetColorMatrix(matrix, ColorMatrixFlag.Default, ColorAdjustType.Bitmap);
+
+                g.DrawImage(img, new Rectangle(0, 0, bmp.Width, bmp.Height), 0, 0, img.Width, img.Height, GraphicsUnit.Pixel, attributes);
             }
 
             return bmp;
         }
 
+        // Method to start the game when a button or label is clicked
         private void startGame(object sender, EventArgs e)
         {
-            Thread thread = new Thread(delegate() { new MainForm().ShowDialog(); });
+            // Pass initial values for lives, attempts, and wins
+            int initialLives = 6;
+            int initialAttempts = 0;
+            int initialWins = 0;
+
+            Thread thread = new Thread(delegate () { new MainForm(initialLives, initialAttempts, initialWins).ShowDialog(); });
             thread.Start();
             this.Close();
         }
