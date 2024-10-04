@@ -54,6 +54,134 @@ namespace Hangman
             }
         }
 
+
+
+        // Using Dictionary to hold the Categories and words
+        // We will have three word difficulty levels chosen at random, and each difficulty will have different points assigned
+
+        private Dictionary<string, List<string>> categoryWords = new Dictionary<string, List<string>>() {
+
+            { "Food", new List<string>
+        {
+            // Easy
+            "Barbeque", "Pancakes", "Meatballs", "Casserole",
+            "Tortilla", "Coleslaw", "Dumpling", "Sandwich",
+            "Macaroni", "Crabcake",
+
+            //Medium
+            "Bread", "Pizza", "Toast", "Tacos", "Sushi", "Bagel", "Steak",
+            "Quiche", "Ramen", "Paella",
+
+            // Hard
+            "Rice", "Soup", "Beef", "Tuna", "Spam", "Eggs"
+            }
+        },
+
+            { "Dessert", new List<string>
+        {
+            // Easy
+            "Brownies", "Cupcakes", "Macarons", "Doughnut", "Tiramisu",
+            "Pavlova", "Profiterole",
+
+            //Medium
+            "Fudge", "Crepe", "Trifle", "Cookie", "Pastry", "Mousse",
+            "Parfait", "Gelato", "Sorbet",
+
+            // Hard
+            "Tart", "Pies", "Cake", "Flan"
+            }
+        },
+       
+
+            { "Animals", new List<string>
+        {
+            // Easy
+            "Giraffes", "Elephant", "Flamingo",
+            "Kangaroo", "Hedgehog",
+
+            //Medium
+            "Otter", "Horse", "Sheep", "Zebra", "Geese", "Rabbit",
+            "Koala", "Tiger",
+
+            // Hard
+            "Lynx", "Elk",  "Wolf", "Bear", "Frog", "Mole", "Cow"
+
+            }
+        },
+
+            { "Countries", new List<string>
+        {
+            // Easy
+            "Portugal", "Thailand", "Colombia", "Malaysia",
+
+            //Medium
+            "Nepal", "Chile", "Spain", "Egypt", "Italy", "Brazil",
+            "China", "Kenya", "France",
+
+            // Hard
+            "Peru", "Cuba", "Laos", "Chad",  "Mali", "Fiji", "Iraq", "Iran", "Oman",
+            }
+        },
+
+            { "Type of Vehicle", new List<string>
+        {
+            // Easy
+            "Tractor", "Ambulance", "Airplane",
+
+            //Medium
+            "Truck", "Train", "Yacht", "Scooter", "Sedan",
+            "Trolley", 
+            // Hard
+            "Boat", "Bike", "Jeep", "Tram", "Car" , "Van", "Bus",
+            }
+        },
+
+            { "Colors", new List<string>
+        {
+            // Easy
+            "Lavender",
+
+            //Medium
+            "Amber", "Ivory", "Indigo", "Olive",  "Peach",
+            "Coral", "Mauve",
+
+            // Hard
+            "Blue", "Gold", "Pink", "Gray", "Aqua", "Lime", "Teal","Plum"
+            }
+        },
+
+
+            { "Sports", new List<string>
+        {
+            // Easy
+            "Baseball","Swimming", "Football",
+            "Handball", "Softball",
+
+            //Medium
+            "Rugby", "Soccer", "Hockey", "Boxing", "Fencing",
+            "Rowing", "Squash",
+
+            // Hard
+            "Judo", "Polo", "Dart", "Surf", "Yoga", "Dive", "Gold", "Ski"
+            }
+        },
+
+            { "Instrument", new List<string>
+        {
+            // Easy
+            "Saxophone", "Trombone", "Accordion", "Clarinet", "Mandolin",
+            "Marimba", "Harmonica",
+
+            //Medium
+            "Violin", "Trumpet", "Flute", "Cello", "Banjo", "Piano",
+            "Tuba", "Drums", "Conga",
+
+            // Hard
+            "Harp", "Oboe", "Bong", "Lyre", "Uke", "Bass"
+            }
+        }
+    };
+
         private void inputFromKeyboard(object sender, EventArgs e)
         {
             Button b = (Button)sender;
