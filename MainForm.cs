@@ -182,6 +182,31 @@ namespace Hangman
         }
     };
 
+
+        // Difficulty point system
+        private const int Easy = 5;
+        private const int Medium = 10;
+        private const int Hard = 15;
+
+        // This method determines the word points by length
+        private int wordPoints(string word)
+        {
+            if (word.Length >= 8)
+            {
+                return Easy;
+            }
+
+            else if (word.Length == 5 || word.Length == 6)
+            {
+                return Medium;
+            }
+
+            else
+            {
+                return Hard;
+            }
+        }
+
         private void inputFromKeyboard(object sender, EventArgs e)
         {
             Button b = (Button)sender;
