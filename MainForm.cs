@@ -274,12 +274,14 @@ namespace Hangman
         // this is to a function to use to keep track of score
         public void ScoreKeeper(char buttonValue)
         {
+        // initialize score as 0
         int score = 0;
-
+        // if guess is right then gives score based on difficulty
         if (CheckIfGuessRight(buttonValue))
         {
             score += WordPoint(randomWord);
         }
+        // so the score, doesnt change when added 
         else
         {
             score += 0;
