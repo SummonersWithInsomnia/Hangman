@@ -4,6 +4,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -17,7 +18,12 @@ namespace Hangman
 
         private List<string> words;
 
-        private string currentWord;
+        private string currentWord = "";
+        private string upperCurrentWord = "";
+
+        private string answer = "";
+        private string upperAnswer = "";
+        StringBuilder upperAnswerStringBuilder;
         
         // Score
         private int score = 0;
@@ -59,6 +65,11 @@ namespace Hangman
 
         private void setupGame()
         {
+            currentWord = "";
+            upperCurrentWord = "";
+            answer = "";
+            upperAnswer = "";
+            
             // Reset the wrong counter every level
             wrongCount = 0;
             pb_hanger.Image = hangmanPhotos[wrongCount];
@@ -70,10 +81,15 @@ namespace Hangman
             }
 
             currentWord = getWord();
+            upperCurrentWord = currentWord.ToUpper();
             lb_category_value.Text = upperCaseFirstLetter(wordList[currentWord]);
             Console.WriteLine("Current word: " + currentWord);
 
             lb_input.Text = generateStars(currentWord);
+            upperAnswer = generateStars(currentWord);
+            answer = upperAnswer.ToLower();
+            
+            upperAnswerStringBuilder = new StringBuilder(upperAnswer);
         }
 
         private string upperCaseFirstLetter(string word)
@@ -95,6 +111,10 @@ namespace Hangman
         {
             score = 0;
             level = 1;
+            lb_score_value.Text = score.ToString();
+            lb_level_value.Text = level.ToString();
+            
+            setupGame();
         }
 
         // To read words from file
@@ -121,7 +141,7 @@ namespace Hangman
         private void inputFromKeyBoard(object sender, EventArgs e)
         {
             Button b = (Button)sender;
-            Console.WriteLine("Input form Keyboard: " + b.Text);
+            // Console.WriteLine("Input form Keyboard: " + b.Text);
 
             if (checkLetter(b.Text))
             {
@@ -130,13 +150,60 @@ namespace Hangman
                 // for reset the buttons
                 usedButtons.Add(b);
             }
-            
+            else
+            {
+                wrongCount++;
+            }
+
+            updateUIandCheckWin();
+        }
+
+        private void updateUIandCheckWin()
+        {
+            lb_input.Text = upperAnswer;
+            // Console.WriteLine(upperAnswer);
+
+            if (answer == currentWord)
+            {
+                score += currentWord.Length * 2;
+                level++;
+
+                lb_score_value.Text = score.ToString();
+                lb_level_value.Text = level.ToString();
+                
+                setupGame();
+            }
+            else
+            {
+                pb_hanger.Image = hangmanPhotos[wrongCount];
+            }
+
+            if (wrongCount == 6)
+            {
+                // lose
+                MessageBox.Show("You lose.", "Game Over");
+                resetGame();
+            }
         }
 
         // To check the letter
         private bool checkLetter(string letter)
         {
-            return false;
+            bool gotLetter = false;
+            
+            for (int i = 0; i < upperCurrentWord.Length; i++)
+            {
+                if (upperCurrentWord[i] == letter[0])
+                {
+                    upperAnswerStringBuilder[i] = letter[0];
+                    gotLetter = true;
+                }
+            }
+
+            upperAnswer = upperAnswerStringBuilder.ToString();
+            answer = upperAnswer.ToLower();
+            
+            return gotLetter;
         }
 
         private void btn_back_to_menu_Click(object sender, EventArgs e)
