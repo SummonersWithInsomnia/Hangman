@@ -642,6 +642,7 @@ namespace Hangman
             btn_back_to_menu.TabIndex = 46;
             btn_back_to_menu.Text = "Back to Menu";
             btn_back_to_menu.UseVisualStyleBackColor = false;
+            btn_back_to_menu.Click += new System.EventHandler(this.btn_back_to_menu_Click);
             // 
             // MainForm
             // 

@@ -19,7 +19,13 @@ namespace Hangman
             Console.WriteLine("Input form Keyboard: " + b.Text);
         }
         
-        
+        private void btn_back_to_menu_Click(object sender, EventArgs e)
+        {
+            // Using a new thread for switching to the GameTitle window
+            Thread thread = new Thread(delegate() { new GameTitle().ShowDialog(); });
+            thread.Start();
+            this.Close();
+        }
     }
 }
 
