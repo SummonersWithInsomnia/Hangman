@@ -227,5 +227,29 @@ namespace Hangman
             thread.Start();
             this.Close();
         }
+        
+        // This function would pick a randomWord from the Dictionary
+        public randomWordPick()
+        {
+        // Create a Random instance
+        Random random = new Random();
+
+        // Pick a random category from the dictionary
+        var randomCategoryKey = categoryWords.Keys.ElementAt(random.Next(categoryWords.Count));
+
+        // Retrieve the words from the selected category
+        var wordsInCategory = categoryWords[randomCategoryKey];
+
+        // Pick a random word from that category
+        var randomWord = wordsInCategory[random.Next(wordsInCategory.Count)];
+        }
+
+        // This function would convert the randomzed word to a char array
+        public convertToLetterArray()
+        {
+        char guessingLetters[] = randomWord.ToCharArray();
+        }
+        
+        
     }
 }
