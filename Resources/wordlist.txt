@@ -134,7 +134,7 @@ dart,sports
 surf,sports
 yoga,sports
 dive,sports
-gold,sports
+golf,sports
 ski,sports
 fencing,sports
 saxophone,instrument
