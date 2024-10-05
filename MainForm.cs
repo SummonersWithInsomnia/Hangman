@@ -17,8 +17,6 @@ namespace Hangman
         {
             InitializeComponent();
         }
-
-        private System.Windows.Forms.PictureBox pb_hanger;
         //Array to hold hangman drawings
         private Bitmap[] hangmanPhotos =
         {
@@ -227,5 +225,12 @@ namespace Hangman
             thread.Start();
             this.Close();
         }
+
+        private void how_to_play_btn_Click(object sender, EventArgs e)
+        {
+            HowToPlay.ShowDialog;
+        }
+
+
     }
 }
