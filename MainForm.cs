@@ -174,33 +174,65 @@ namespace Hangman
             thread.Start();
             this.Close();
         }
-
-        private void pb_hanger_Click(object sender, EventArgs e)
+        
+        // This function would pick a randomWord from the Dictionary
+        public randomWordPick()
         {
-            // Handle PictureBox click if needed
+        // Create a Random instance
+        Random random = new Random();
+
+        // Pick a random category from the dictionary
+        var randomCategoryKey = categoryWords.Keys.ElementAt(random.Next(categoryWords.Count));
+
+        // Retrieve the words from the selected category
+        var wordsInCategory = categoryWords[randomCategoryKey];
+
+        // Pick a random word from that category
+        var randomWord = wordsInCategory[random.Next(wordsInCategory.Count)];
         }
 
-        // Constructor to receive parameters
-        public MainForm(string name, string difficulty, string category)
+        // This function would convert the randomzed word to a char array
+        public convertToLetterArray()
         {
-            InitializeComponent();
-            playerName = name; // Store the player's name
-            selectedDifficulty = difficulty; // Store the selected difficulty
-            selectedCategory = category; // Store the selected category
-
-            InitializeGameLabels();
-
-            // Initialize PictureBox
-            pb_hanger = new PictureBox
-            {
-                Size = new Size(200, 200), // Adjust size as needed
-                Location = new Point(100, 100), // Adjust location as needed
-                Image = hangmanPhotos[0], // Set initial image
-                SizeMode = PictureBoxSizeMode.StretchImage // Set size mode
-            };
-
-            // Add PictureBox to the form
-            this.Controls.Add(pb_hanger);
+        
+        char guessingLetters[] = randomWord.ToCharArray();
         }
-    }
-}
+
+        // this function would get button input and and check if its in the guessed word else it runs guessCounter function 
+        public void CheckIfGuessRight(char buttonValue)
+        {
+        // this is for loop through the letters
+        int numOfLetters = guessingLetters.Length;
+        // set if word has been found
+        bool match = false;
+        // checking if parameter is in the guessed letter array which should be true
+        bool init = guessingLetters.Contains(buttonValue);
+
+        
+        if (init)
+        {
+            match = true;
+        }
+        else
+        {
+            GuessCounter();
+        }
+        }
+        
+        // this is to a function to use to keep track of score
+        public void ScoreKeeper(char buttonValue)
+        {
+        // initialize score as 0
+        int score = 0;
+        // if guess is right then gives score based on difficulty
+        if (CheckIfGuessRight(buttonValue))
+        {
+            score += WordPoint(randomWord);
+        }
+        // so the score, doesnt change when added 
+        else
+        {
+            score += 0;
+        }
+
+        }
