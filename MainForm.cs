@@ -227,5 +227,63 @@ namespace Hangman
             thread.Start();
             this.Close();
         }
-    }
-}
+        
+        // This function would pick a randomWord from the Dictionary
+        public randomWordPick()
+        {
+        // Create a Random instance
+        Random random = new Random();
+
+        // Pick a random category from the dictionary
+        var randomCategoryKey = categoryWords.Keys.ElementAt(random.Next(categoryWords.Count));
+
+        // Retrieve the words from the selected category
+        var wordsInCategory = categoryWords[randomCategoryKey];
+
+        // Pick a random word from that category
+        var randomWord = wordsInCategory[random.Next(wordsInCategory.Count)];
+        }
+
+        // This function would convert the randomzed word to a char array
+        public convertToLetterArray()
+        {
+        char guessingLetters[] = randomWord.ToCharArray();
+        }
+
+        // this function would get button input and and check if its in the guessed word else it runs guessCounter function 
+        public void CheckIfGuessRight(char buttonValue)
+        {
+        // this is for loop through the letters
+        int numOfLetters = guessingLetters.Length;
+        // set if word has been found
+        bool match = false;
+        // checking if parameter is in the guessed letter array which should be true
+        bool init = guessingLetters.Contains(buttonValue);
+
+        
+        if (init)
+        {
+            match = true;
+        }
+        else
+        {
+            GuessCounter();
+        }
+        }
+        
+        // this is to a function to use to keep track of score
+        public void ScoreKeeper(char buttonValue)
+        {
+        // initialize score as 0
+        int score = 0;
+        // if guess is right then gives score based on difficulty
+        if (CheckIfGuessRight(buttonValue))
+        {
+            score += WordPoint(randomWord);
+        }
+        // so the score, doesnt change when added 
+        else
+        {
+            score += 0;
+        }
+        }
