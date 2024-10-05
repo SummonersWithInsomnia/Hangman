@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
+using System.Linq;
+using System.Reflection;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -8,11 +11,38 @@ namespace Hangman
 {
     public partial class MainForm : Form
     {
+        // Dictionaries of the Word List
+        // <word, category>
+        private Dictionary<string, string> wordList;
+        // <word, word.Length>
+        private Dictionary<string, int> pointList;
+        
         public MainForm()
         {
             InitializeComponent();
+            importWords();
         }
-        
+
+        private void importWords()
+        {
+            Assembly assembly = Assembly.GetExecutingAssembly();
+            
+            wordList = new Dictionary<string, string>();
+            pointList = new Dictionary<string, int>();
+
+            Stream stream = assembly.GetManifestResourceStream("Hangman.Resources.wordlist.txt");
+            StreamReader reader = new StreamReader(stream);
+
+            string line;
+            while ((line = reader.ReadLine()) != null)
+            {
+                var values = line.Split(',');
+                wordList.Add(values[0], values[1]);
+                pointList.Add(values[0], values[0].Length);
+            }
+        }
+
+        // To get the input from the buttons of the keyboard
         private void inputFromKeyBoard(object sender, EventArgs e)
         {
             Button b = (Button)sender;
@@ -29,11 +59,14 @@ namespace Hangman
 
         private void btn_about_us_Click(object sender, EventArgs e)
         {
+            // To pop up AboutUsForm
             using (AboutUsForm aboutUsForm = new AboutUsForm())
             {
                 aboutUsForm.ShowDialog();
             }
         }
+        
+        
     }
 }
 
