@@ -26,6 +26,14 @@ namespace Hangman
             thread.Start();
             this.Close();
         }
+
+        private void btn_about_us_Click(object sender, EventArgs e)
+        {
+            using (AboutUsForm aboutUsForm = new AboutUsForm())
+            {
+                aboutUsForm.ShowDialog();
+            }
+        }
     }
 }
 

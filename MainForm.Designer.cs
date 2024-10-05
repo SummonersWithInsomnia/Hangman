@@ -586,6 +586,7 @@ namespace Hangman
             btn_about_us.TabIndex = 42;
             btn_about_us.Text = "About Us";
             btn_about_us.UseVisualStyleBackColor = false;
+            btn_about_us.Click += new System.EventHandler(this.btn_about_us_Click);
             // 
             // lb_category
             // 
