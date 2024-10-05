@@ -44,7 +44,7 @@
             this.lb_start_game.Size = new System.Drawing.Size(227, 38);
             this.lb_start_game.TabIndex = 2;
             this.lb_start_game.Text = "Press to Start";
-            this.lb_start_game.Click += new System.EventHandler(this.startGame);
+            //this.lb_start_game.Click += new System.EventHandler(this.startGame);
             // 
             // lb_copyright
             // 
@@ -54,7 +54,7 @@
             this.lb_copyright.Size = new System.Drawing.Size(393, 24);
             this.lb_copyright.TabIndex = 3;
             this.lb_copyright.Text = "© 2024 Summoners with Insomnia. All right reserved.";
-            this.lb_copyright.Click += new System.EventHandler(this.startGame);
+            //this.lb_copyright.Click += new System.EventHandler(this.startGame);
             // 
             // pb_hanging
             // 
@@ -65,7 +65,7 @@
             this.pb_hanging.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_hanging.TabIndex = 2;
             this.pb_hanging.TabStop = false;
-            this.pb_hanging.Click += new System.EventHandler(this.startGame);
+            //this.pb_hanging.Click += new System.EventHandler(this.startGame);
             // 
             // pb_logo
             // 
@@ -77,7 +77,7 @@
             this.pb_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_logo.TabIndex = 1;
             this.pb_logo.TabStop = false;
-            this.pb_logo.Click += new System.EventHandler(this.startGame);
+            //this.pb_logo.Click += new System.EventHandler(this.startGame);
             // 
             // GameTitle
             // 
@@ -92,7 +92,7 @@
             this.Name = "GameTitle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hangman";
-            this.Click += new System.EventHandler(this.startGame);
+            //this.Click += new System.EventHandler(this.startGame);
             ((System.ComponentModel.ISupportInitialize)(this.pb_hanging)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).EndInit();
             this.ResumeLayout(false);
