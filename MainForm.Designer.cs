@@ -27,6 +27,13 @@ namespace Hangman
 
             base.Dispose(disposing);
         }
+        
+        private System.Windows.Forms.PictureBox pb_hanger;
+        private System.Windows.Forms.Label lb_category_value;
+        private System.Windows.Forms.Label lb_score_value;
+        private System.Windows.Forms.Label lb_level_value;
+        private System.Windows.Forms.Label lb_input;
+        
         /// <summary>
         ///  Clean up any resources being used.
         /// </summary>
@@ -67,21 +74,9 @@ namespace Hangman
             System.Windows.Forms.Button btn_x;
             System.Windows.Forms.Button btn_z;
             System.Windows.Forms.Label lb_score;
-            System.Windows.Forms.Label lb_score_value;
-            System.Windows.Forms.Label lb_input0;
-            System.Windows.Forms.Label lb_input1;
-            System.Windows.Forms.Label lb_input2;
-            System.Windows.Forms.Label lb_input3;
-            System.Windows.Forms.Label lb_input4;
-            System.Windows.Forms.Label lb_input5;
-            System.Windows.Forms.Label lb_input6;
-            System.Windows.Forms.Label lb_input7;
             System.Windows.Forms.Label lb_level;
-            System.Windows.Forms.Label lb_level_value;
             System.Windows.Forms.Button btn_about_us;
             System.Windows.Forms.Label lb_category;
-            System.Windows.Forms.Label lb_category_value;
-            System.Windows.Forms.PictureBox pb_hanger;
             System.Windows.Forms.Panel pn_bar;
             System.Windows.Forms.Button btn_back_to_menu;
             btn_q = new System.Windows.Forms.Button();
@@ -111,25 +106,18 @@ namespace Hangman
             btn_x = new System.Windows.Forms.Button();
             btn_z = new System.Windows.Forms.Button();
             lb_score = new System.Windows.Forms.Label();
-            lb_score_value = new System.Windows.Forms.Label();
-            lb_input0 = new System.Windows.Forms.Label();
-            lb_input1 = new System.Windows.Forms.Label();
-            lb_input2 = new System.Windows.Forms.Label();
-            lb_input3 = new System.Windows.Forms.Label();
-            lb_input4 = new System.Windows.Forms.Label();
-            lb_input5 = new System.Windows.Forms.Label();
-            lb_input6 = new System.Windows.Forms.Label();
-            lb_input7 = new System.Windows.Forms.Label();
             lb_level = new System.Windows.Forms.Label();
-            lb_level_value = new System.Windows.Forms.Label();
             btn_about_us = new System.Windows.Forms.Button();
             lb_category = new System.Windows.Forms.Label();
-            lb_category_value = new System.Windows.Forms.Label();
-            pb_hanger = new System.Windows.Forms.PictureBox();
             pn_bar = new System.Windows.Forms.Panel();
             btn_back_to_menu = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(pb_hanger)).BeginInit();
+            lb_score_value = new System.Windows.Forms.Label();
+            lb_input = new System.Windows.Forms.Label();
+            lb_level_value = new System.Windows.Forms.Label();
+            lb_category_value = new System.Windows.Forms.Label();
+            pb_hanger = new System.Windows.Forms.PictureBox();
             pn_bar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(pb_hanger)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_q
@@ -455,105 +443,6 @@ namespace Hangman
             lb_score.TabIndex = 30;
             lb_score.Text = "Score:";
             // 
-            // lb_score_value
-            // 
-            lb_score_value.AutoSize = true;
-            lb_score_value.BackColor = System.Drawing.Color.Transparent;
-            lb_score_value.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            lb_score_value.Location = new System.Drawing.Point(554, 54);
-            lb_score_value.Name = "lb_score_value";
-            lb_score_value.Size = new System.Drawing.Size(15, 20);
-            lb_score_value.TabIndex = 31;
-            lb_score_value.Text = "-";
-            // 
-            // lb_input0
-            // 
-            lb_input0.AutoSize = true;
-            lb_input0.BackColor = System.Drawing.Color.Transparent;
-            lb_input0.Font = new System.Drawing.Font("Segoe UI", 25F);
-            lb_input0.Location = new System.Drawing.Point(320, 230);
-            lb_input0.Name = "lb_input0";
-            lb_input0.Size = new System.Drawing.Size(42, 57);
-            lb_input0.TabIndex = 32;
-            lb_input0.Text = "_";
-            // 
-            // lb_input1
-            // 
-            lb_input1.AutoSize = true;
-            lb_input1.BackColor = System.Drawing.Color.Transparent;
-            lb_input1.Font = new System.Drawing.Font("Segoe UI", 25F);
-            lb_input1.Location = new System.Drawing.Point(354, 230);
-            lb_input1.Name = "lb_input1";
-            lb_input1.Size = new System.Drawing.Size(42, 57);
-            lb_input1.TabIndex = 33;
-            lb_input1.Text = "_";
-            // 
-            // lb_input2
-            // 
-            lb_input2.AutoSize = true;
-            lb_input2.BackColor = System.Drawing.Color.Transparent;
-            lb_input2.Font = new System.Drawing.Font("Segoe UI", 25F);
-            lb_input2.Location = new System.Drawing.Point(385, 230);
-            lb_input2.Name = "lb_input2";
-            lb_input2.Size = new System.Drawing.Size(42, 57);
-            lb_input2.TabIndex = 34;
-            lb_input2.Text = "_";
-            // 
-            // lb_input3
-            // 
-            lb_input3.AutoSize = true;
-            lb_input3.BackColor = System.Drawing.Color.Transparent;
-            lb_input3.Font = new System.Drawing.Font("Segoe UI", 25F);
-            lb_input3.Location = new System.Drawing.Point(418, 230);
-            lb_input3.Name = "lb_input3";
-            lb_input3.Size = new System.Drawing.Size(42, 57);
-            lb_input3.TabIndex = 35;
-            lb_input3.Text = "_";
-            // 
-            // lb_input4
-            // 
-            lb_input4.AutoSize = true;
-            lb_input4.BackColor = System.Drawing.Color.Transparent;
-            lb_input4.Font = new System.Drawing.Font("Segoe UI", 25F);
-            lb_input4.Location = new System.Drawing.Point(449, 230);
-            lb_input4.Name = "lb_input4";
-            lb_input4.Size = new System.Drawing.Size(42, 57);
-            lb_input4.TabIndex = 36;
-            lb_input4.Text = "_";
-            // 
-            // lb_input5
-            // 
-            lb_input5.AutoSize = true;
-            lb_input5.BackColor = System.Drawing.Color.Transparent;
-            lb_input5.Font = new System.Drawing.Font("Segoe UI", 25F);
-            lb_input5.Location = new System.Drawing.Point(482, 230);
-            lb_input5.Name = "lb_input5";
-            lb_input5.Size = new System.Drawing.Size(42, 57);
-            lb_input5.TabIndex = 37;
-            lb_input5.Text = "_";
-            // 
-            // lb_input6
-            // 
-            lb_input6.AutoSize = true;
-            lb_input6.BackColor = System.Drawing.Color.Transparent;
-            lb_input6.Font = new System.Drawing.Font("Segoe UI", 25F);
-            lb_input6.Location = new System.Drawing.Point(513, 230);
-            lb_input6.Name = "lb_input6";
-            lb_input6.Size = new System.Drawing.Size(42, 57);
-            lb_input6.TabIndex = 38;
-            lb_input6.Text = "_";
-            // 
-            // lb_input7
-            // 
-            lb_input7.AutoSize = true;
-            lb_input7.BackColor = System.Drawing.Color.Transparent;
-            lb_input7.Font = new System.Drawing.Font("Segoe UI", 25F);
-            lb_input7.Location = new System.Drawing.Point(545, 230);
-            lb_input7.Name = "lb_input7";
-            lb_input7.Size = new System.Drawing.Size(42, 57);
-            lb_input7.TabIndex = 39;
-            lb_input7.Text = "_";
-            // 
             // lb_level
             // 
             lb_level.AutoSize = true;
@@ -564,17 +453,6 @@ namespace Hangman
             lb_level.Size = new System.Drawing.Size(83, 29);
             lb_level.TabIndex = 40;
             lb_level.Text = "Level:";
-            // 
-            // lb_level_value
-            // 
-            lb_level_value.AutoSize = true;
-            lb_level_value.BackColor = System.Drawing.Color.Transparent;
-            lb_level_value.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            lb_level_value.Location = new System.Drawing.Point(339, 54);
-            lb_level_value.Name = "lb_level_value";
-            lb_level_value.Size = new System.Drawing.Size(18, 20);
-            lb_level_value.TabIndex = 41;
-            lb_level_value.Text = "1";
             // 
             // btn_about_us
             // 
@@ -598,6 +476,60 @@ namespace Hangman
             lb_category.Size = new System.Drawing.Size(125, 29);
             lb_category.TabIndex = 44;
             lb_category.Text = "Category:";
+            // 
+            // pn_bar
+            // 
+            pn_bar.BackgroundImage = global::Hangman.Properties.Resources.brick_panel;
+            pn_bar.Controls.Add(btn_back_to_menu);
+            pn_bar.Location = new System.Drawing.Point(2, 489);
+            pn_bar.Name = "pn_bar";
+            pn_bar.Size = new System.Drawing.Size(690, 39);
+            pn_bar.TabIndex = 43;
+            // 
+            // btn_back_to_menu
+            // 
+            btn_back_to_menu.BackColor = System.Drawing.Color.Khaki;
+            btn_back_to_menu.Location = new System.Drawing.Point(551, 5);
+            btn_back_to_menu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btn_back_to_menu.Name = "btn_back_to_menu";
+            btn_back_to_menu.Size = new System.Drawing.Size(107, 30);
+            btn_back_to_menu.TabIndex = 46;
+            btn_back_to_menu.Text = "Back to Menu";
+            btn_back_to_menu.UseVisualStyleBackColor = false;
+            btn_back_to_menu.Click += new System.EventHandler(this.btn_back_to_menu_Click);
+            // 
+            // lb_score_value
+            // 
+            lb_score_value.AutoSize = true;
+            lb_score_value.BackColor = System.Drawing.Color.Transparent;
+            lb_score_value.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lb_score_value.Location = new System.Drawing.Point(554, 54);
+            lb_score_value.Name = "lb_score_value";
+            lb_score_value.Size = new System.Drawing.Size(26, 29);
+            lb_score_value.TabIndex = 31;
+            lb_score_value.Text = "0";
+            // 
+            // lb_input
+            // 
+            lb_input.AutoSize = true;
+            lb_input.BackColor = System.Drawing.Color.Transparent;
+            lb_input.Font = new System.Drawing.Font("Segoe UI", 25F);
+            lb_input.Location = new System.Drawing.Point(408, 235);
+            lb_input.Name = "lb_input";
+            lb_input.Size = new System.Drawing.Size(42, 57);
+            lb_input.TabIndex = 32;
+            lb_input.Text = "_";
+            // 
+            // lb_level_value
+            // 
+            lb_level_value.AutoSize = true;
+            lb_level_value.BackColor = System.Drawing.Color.Transparent;
+            lb_level_value.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lb_level_value.Location = new System.Drawing.Point(339, 54);
+            lb_level_value.Name = "lb_level_value";
+            lb_level_value.Size = new System.Drawing.Size(26, 29);
+            lb_level_value.TabIndex = 41;
+            lb_level_value.Text = "1";
             // 
             // lb_category_value
             // 
@@ -624,27 +556,6 @@ namespace Hangman
             pb_hanger.TabIndex = 29;
             pb_hanger.TabStop = false;
             // 
-            // pn_bar
-            // 
-            pn_bar.BackgroundImage = global::Hangman.Properties.Resources.brick_panel;
-            pn_bar.Controls.Add(btn_back_to_menu);
-            pn_bar.Location = new System.Drawing.Point(2, 489);
-            pn_bar.Name = "pn_bar";
-            pn_bar.Size = new System.Drawing.Size(690, 39);
-            pn_bar.TabIndex = 43;
-            // 
-            // btn_back_to_menu
-            // 
-            btn_back_to_menu.BackColor = System.Drawing.Color.Khaki;
-            btn_back_to_menu.Location = new System.Drawing.Point(551, 5);
-            btn_back_to_menu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            btn_back_to_menu.Name = "btn_back_to_menu";
-            btn_back_to_menu.Size = new System.Drawing.Size(107, 30);
-            btn_back_to_menu.TabIndex = 46;
-            btn_back_to_menu.Text = "Back to Menu";
-            btn_back_to_menu.UseVisualStyleBackColor = false;
-            btn_back_to_menu.Click += new System.EventHandler(this.btn_back_to_menu_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -656,14 +567,7 @@ namespace Hangman
             this.Controls.Add(btn_about_us);
             this.Controls.Add(lb_level_value);
             this.Controls.Add(lb_level);
-            this.Controls.Add(lb_input7);
-            this.Controls.Add(lb_input6);
-            this.Controls.Add(lb_input5);
-            this.Controls.Add(lb_input4);
-            this.Controls.Add(lb_input3);
-            this.Controls.Add(lb_input2);
-            this.Controls.Add(lb_input1);
-            this.Controls.Add(lb_input0);
+            this.Controls.Add(lb_input);
             this.Controls.Add(lb_score_value);
             this.Controls.Add(lb_score);
             this.Controls.Add(pb_hanger);
@@ -701,8 +605,8 @@ namespace Hangman
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hangman";
-            ((System.ComponentModel.ISupportInitialize)(pb_hanger)).EndInit();
             pn_bar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(pb_hanger)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
         }
