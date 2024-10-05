@@ -249,7 +249,39 @@ namespace Hangman
         {
         char guessingLetters[] = randomWord.ToCharArray();
         }
+
+        // this function would get button input and and check if its in the guessed word else it runs guessCounter function 
+        public void CheckIfGuessRight(char buttonValue)
+        {
+        // this is for loop through the letters
+        int numOfLetters = guessingLetters.Length;
+        // set if word has been found
+        bool match = false;
+        // checking if parameter is in the guessed letter array which should be true
+        bool init = guessingLetters.Contains(buttonValue);
+
         
+        if (init)
+        {
+            match = true;
+        }
+        else
+        {
+            GuessCounter();
+        }
+        }
         
-    }
-}
+        // this is to a function to use to keep track of score
+        public void ScoreKeeper(char buttonValue)
+        {
+        int score = 0;
+
+        if (CheckIfGuessRight(buttonValue))
+        {
+            score += WordPoint(randomWord);
+        }
+        else
+        {
+            score += 0;
+        }
+        }
