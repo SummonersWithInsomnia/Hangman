@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Drawing.Imaging;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Timer = System.Windows.Forms.Timer;
 
@@ -15,27 +8,29 @@ namespace Hangman
 {
     public partial class GameTitle : Form
     {
+        // Values of Animation of Logo
         private int pbLogoOpacity = 0;
-        private const int imgFadeSpeed = 50;
-
         private Timer pbLogoFadeTimer;
-
+        private const int ImgFadeSpeed = 50;
+        
         public GameTitle()
         {
             InitializeComponent();
-
-            pbLogoFadeTimer = new Timer { Interval = 300 };
+            
+            // Timer of Animation
+            pbLogoFadeTimer = new Timer { Interval = 100 };
             pbLogoFadeTimer.Tick += pbLogoFadeTimer_Tick;
             pbLogoFadeTimer.Start();
         }
-
+        
+        // Tick of Timer
         private void pbLogoFadeTimer_Tick(object sender, EventArgs e)
         {
             if (pbLogoOpacity < 255)
             {
-                pbLogoOpacity += imgFadeSpeed;
+                pbLogoOpacity += ImgFadeSpeed;
                 if (pbLogoOpacity > 255) pbLogoOpacity = 255;
-                pb_logo.Image = applyOpacity(pb_logo.Image, pbLogoOpacity);
+                pb_logo.Image = ApplyOpacity(pb_logo.Image, pbLogoOpacity);
             }
             else
             {
@@ -44,8 +39,9 @@ namespace Hangman
                 this.Controls.Add(this.lb_start_game);
             }
         }
-
-        private Image applyOpacity(Image img, float opacity)
+        
+        // Calculate the logo image to apply the opacity
+        private Image ApplyOpacity(Image img, float opacity)
         {
             Bitmap bmp = new Bitmap(img);
             using (Graphics g = Graphics.FromImage(bmp))
@@ -60,12 +56,12 @@ namespace Hangman
                     }
                 }
             }
-
             return bmp;
         }
 
-        private void startGame(object sender, EventArgs e)
+        private void StartGame(object sender, EventArgs e)
         {
+            // Using a new thread for switching to the MainForm window
             Thread thread = new Thread(delegate() { new MainForm().ShowDialog(); });
             thread.Start();
             this.Close();

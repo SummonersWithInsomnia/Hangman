@@ -1,23 +1,43 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Hangman
 {
     public partial class MainForm : Form
     {
-        public MainForm()
-        {
-            InitializeComponent();
-        }
-        //Array to hold hangman drawings
+        // Dictionary of the Word List
+        // <word, category>
+        private Dictionary<string, string> wordList;
+
+        private List<string> words;
+
+        private string currentWord = "";
+        private string upperCurrentWord = "";
+
+        private string answer = "";
+        private string upperAnswer = "";
+        StringBuilder upperAnswerStringBuilder;
+        
+        // Score
+        private int score = 0;
+        
+        // Level
+        private int level = 1;
+        
+        // Wrong count
+        private int wrongCount = 0;
+
+        // Log the used buttons
+        private HashSet<Button> usedButtons = new HashSet<Button>();
+        
+        // Resources of Hangman Photos
         private Bitmap[] hangmanPhotos =
         {
             Hangman.Properties.Resources.hangman0,
@@ -28,209 +48,184 @@ namespace Hangman
             Hangman.Properties.Resources.hangman5,
             Hangman.Properties.Resources.hangman6,
         };
-
-        //Track incorrect guesses though keyboard clicks
-        private int wrongLetter = 0;
-
-        //Function to handle wrong letter guesses
-        private void guessCounter()
+        
+        public MainForm()
         {
-            wrongLetter++;
+            InitializeComponent();
+            importWords();
+            setupGame();
+        }
 
-            if (wrongLetter < hangmanPhotos.Length)
+        private string getWord()
+        {
+            Random random = new Random();
+            int rIndex = random.Next(words.Count);
+            return words[rIndex];
+        }
+
+        private void setupGame()
+        {
+            currentWord = "";
+            upperCurrentWord = "";
+            answer = "";
+            upperAnswer = "";
+            
+            // Reset the wrong counter every level
+            wrongCount = 0;
+            pb_hanger.Image = hangmanPhotos[wrongCount];
+            
+            // Reset the buttons
+            foreach (var button in usedButtons)
             {
-                pb_hanger.Image = hangmanPhotos[wrongLetter];
+                button.Visible = true;
             }
 
-            else
-            {
-                // If max guesses are reached, show game over message
-                MessageBox.Show("Game Over!");
+            currentWord = getWord();
+            upperCurrentWord = currentWord.ToUpper();
+            lb_category_value.Text = upperCaseFirstLetter(wordList[currentWord]);
+            Console.WriteLine("Current word: " + currentWord);
 
-                // or we add a button to reset the game and/or back to main menu
-                //ResetGame();
+            lb_input.Text = generateStars(currentWord);
+            upperAnswer = generateStars(currentWord);
+            answer = upperAnswer.ToLower();
+            
+            upperAnswerStringBuilder = new StringBuilder(upperAnswer);
+        }
+
+        private string upperCaseFirstLetter(string word)
+        {
+            return word.Substring(0, 1).ToUpper() + word.Substring(1);
+        }
+
+        private string generateStars(string word)
+        {
+            string stars = "";
+            for (int i = 0; i < word.Length; i++)
+            {
+                stars += "*";
+            }
+            return stars;
+        }
+
+        private void resetGame()
+        {
+            score = 0;
+            level = 1;
+            lb_score_value.Text = score.ToString();
+            lb_level_value.Text = level.ToString();
+            
+            setupGame();
+        }
+
+        // To read words from file
+        private void importWords()
+        {
+            Assembly assembly = Assembly.GetExecutingAssembly();
+            
+            wordList = new Dictionary<string, string>();
+            words = new List<string>();
+
+            Stream stream = assembly.GetManifestResourceStream("Hangman.Resources.wordlist.txt");
+            StreamReader reader = new StreamReader(stream);
+
+            string line;
+            while ((line = reader.ReadLine()) != null)
+            {
+                var values = line.Split(',');
+                wordList.Add(values[0], values[1]);
+                words.Add(values[0]);
             }
         }
 
-
-
-        // Using Dictionary to hold the Categories and words
-        // We will have three word difficulty levels chosen at random, and each difficulty will have different points assigned
-
-        private Dictionary<string, List<string>> categoryWords = new Dictionary<string, List<string>>() {
-
-            { "Food", new List<string>
-        {
-            // Easy
-            "Barbeque", "Pancakes", "Meatballs", "Casserole",
-            "Tortilla", "Coleslaw", "Dumpling", "Sandwich",
-            "Macaroni", "Crabcake",
-
-            //Medium
-            "Bread", "Pizza", "Toast", "Tacos", "Sushi", "Bagel", "Steak",
-            "Quiche", "Ramen", "Paella",
-
-            // Hard
-            "Rice", "Soup", "Beef", "Tuna", "Spam", "Eggs"
-            }
-        },
-
-            { "Dessert", new List<string>
-        {
-            // Easy
-            "Brownies", "Cupcakes", "Macarons", "Doughnut", "Tiramisu",
-            "Pavlova", "Profiterole",
-
-            //Medium
-            "Fudge", "Crepe", "Trifle", "Cookie", "Pastry", "Mousse",
-            "Parfait", "Gelato", "Sorbet",
-
-            // Hard
-            "Tart", "Pies", "Cake", "Flan"
-            }
-        },
-       
-
-            { "Animals", new List<string>
-        {
-            // Easy
-            "Giraffes", "Elephant", "Flamingo",
-            "Kangaroo", "Hedgehog",
-
-            //Medium
-            "Otter", "Horse", "Sheep", "Zebra", "Geese", "Rabbit",
-            "Koala", "Tiger",
-
-            // Hard
-            "Lynx", "Elk",  "Wolf", "Bear", "Frog", "Mole", "Cow"
-
-            }
-        },
-
-            { "Countries", new List<string>
-        {
-            // Easy
-            "Portugal", "Thailand", "Colombia", "Malaysia",
-
-            //Medium
-            "Nepal", "Chile", "Spain", "Egypt", "Italy", "Brazil",
-            "China", "Kenya", "France",
-
-            // Hard
-            "Peru", "Cuba", "Laos", "Chad",  "Mali", "Fiji", "Iraq", "Iran", "Oman",
-            }
-        },
-
-            { "Type of Vehicle", new List<string>
-        {
-            // Easy
-            "Tractor", "Ambulance", "Airplane",
-
-            //Medium
-            "Truck", "Train", "Yacht", "Scooter", "Sedan",
-            "Trolley", 
-            // Hard
-            "Boat", "Bike", "Jeep", "Tram", "Car" , "Van", "Bus",
-            }
-        },
-
-            { "Colors", new List<string>
-        {
-            // Easy
-            "Lavender",
-
-            //Medium
-            "Amber", "Ivory", "Indigo", "Olive",  "Peach",
-            "Coral", "Mauve",
-
-            // Hard
-            "Blue", "Gold", "Pink", "Gray", "Aqua", "Lime", "Teal","Plum"
-            }
-        },
-
-
-            { "Sports", new List<string>
-        {
-            // Easy
-            "Baseball","Swimming", "Football",
-            "Handball", "Softball",
-
-            //Medium
-            "Rugby", "Soccer", "Hockey", "Boxing", "Fencing",
-            "Rowing", "Squash",
-
-            // Hard
-            "Judo", "Polo", "Dart", "Surf", "Yoga", "Dive", "Gold", "Ski"
-            }
-        },
-
-            { "Instrument", new List<string>
-        {
-            // Easy
-            "Saxophone", "Trombone", "Accordion", "Clarinet", "Mandolin",
-            "Marimba", "Harmonica",
-
-            //Medium
-            "Violin", "Trumpet", "Flute", "Cello", "Banjo", "Piano",
-            "Tuba", "Drums", "Conga",
-
-            // Hard
-            "Harp", "Oboe", "Bong", "Lyre", "Uke", "Bass"
-            }
-        }
-    };
-
-
-        // Difficulty point system
-        private const int Easy = 5;
-        private const int Medium = 10;
-        private const int Hard = 15;
-
-        // This method determines the word points by length
-        private int wordPoints(string word)
-        {
-            if (word.Length >= 8)
-            {
-                return Easy;
-            }
-
-            else if (word.Length == 5 || word.Length == 6)
-            {
-                return Medium;
-            }
-
-            else
-            {
-                return Hard;
-            }
-        }
-
-        private void inputFromKeyboard(object sender, EventArgs e)
+        // To get the input from the buttons of the keyboard
+        private void inputFromKeyBoard(object sender, EventArgs e)
         {
             Button b = (Button)sender;
-            Console.WriteLine("Input form Keyboard: " + b.Text);
+            // Console.WriteLine("Input form Keyboard: " + b.Text);
+
+            if (checkLetter(b.Text))
+            {
+                b.Visible = false;
+                
+                // for reset the buttons
+                usedButtons.Add(b);
+            }
+            else
+            {
+                wrongCount++;
+            }
+
+            updateUIandCheckWin();
         }
-        
+
+        private void updateUIandCheckWin()
+        {
+            lb_input.Text = upperAnswer;
+            // Console.WriteLine(upperAnswer);
+
+            if (answer == currentWord)
+            {
+                score += currentWord.Length * 2;
+                level++;
+
+                lb_score_value.Text = score.ToString();
+                lb_level_value.Text = level.ToString();
+                
+                setupGame();
+            }
+            else
+            {
+                pb_hanger.Image = hangmanPhotos[wrongCount];
+            }
+
+            if (wrongCount == 6)
+            {
+                // lose
+                MessageBox.Show("You lose.", "Game Over");
+                resetGame();
+            }
+        }
+
+        // To check the letter
+        private bool checkLetter(string letter)
+        {
+            bool gotLetter = false;
+            
+            for (int i = 0; i < upperCurrentWord.Length; i++)
+            {
+                if (upperCurrentWord[i] == letter[0])
+                {
+                    upperAnswerStringBuilder[i] = letter[0];
+                    gotLetter = true;
+                }
+            }
+
+            upperAnswer = upperAnswerStringBuilder.ToString();
+            answer = upperAnswer.ToLower();
+            
+            return gotLetter;
+        }
+
+        private void btn_back_to_menu_Click(object sender, EventArgs e)
+        {
+            // Using a new thread for switching to the GameTitle window
+            Thread thread = new Thread(delegate() { new GameTitle().ShowDialog(); });
+            thread.Start();
+            this.Close();
+        }
+
         private void btn_about_us_Click(object sender, EventArgs e)
         {
+            // To pop up AboutUsForm
             using (AboutUsForm aboutUsForm = new AboutUsForm())
             {
                 aboutUsForm.ShowDialog();
             }
         }
 
-        private void btn_back_to_menu_Click(object sender, EventArgs e)
-        {
-            Thread thread = new Thread(delegate () { new GameTitle().ShowDialog(); });
-            thread.Start();
-            this.Close();
-        }
-
         private void how_to_play_btn_Click(object sender, EventArgs e)
         {
             HowToPlay.ShowDialog;
         }
-
-
     }
 }
