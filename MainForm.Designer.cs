@@ -41,6 +41,7 @@ namespace Hangman
 
         #region Windows Form Designer generated code
 
+
         /// <summary>
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
@@ -74,6 +75,7 @@ namespace Hangman
             System.Windows.Forms.Button btn_x;
             System.Windows.Forms.Button btn_z;
             System.Windows.Forms.Label lb_score;
+            System.Windows.Forms.Button how_to_play_btn;
             System.Windows.Forms.Label lb_level;
             System.Windows.Forms.Button btn_about_us;
             System.Windows.Forms.Label lb_category;
@@ -106,6 +108,7 @@ namespace Hangman
             btn_x = new System.Windows.Forms.Button();
             btn_z = new System.Windows.Forms.Button();
             lb_score = new System.Windows.Forms.Label();
+            how_to_play_btn = new System.Windows.Forms.Button();
             lb_level = new System.Windows.Forms.Label();
             btn_about_us = new System.Windows.Forms.Button();
             lb_category = new System.Windows.Forms.Label();
@@ -556,6 +559,18 @@ namespace Hangman
             pb_hanger.TabIndex = 29;
             pb_hanger.TabStop = false;
             // 
+            // how_to_play_btn
+            // 
+            how_to_play_btn.BackColor = System.Drawing.Color.Khaki;
+            how_to_play_btn.Location = new System.Drawing.Point(143, 5);
+            how_to_play_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            how_to_play_btn.Name = "how_to_play_btn";
+            how_to_play_btn.Size = new System.Drawing.Size(81, 30);
+            how_to_play_btn.TabIndex = 46;
+            how_to_play_btn.Text = "How to play";
+            how_to_play_btn.UseVisualStyleBackColor = false;
+            how_to_play_btn.Click += new System.EventHandler(this.how_to_play_btn_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -610,7 +625,6 @@ namespace Hangman
             this.ResumeLayout(false);
             this.PerformLayout();
         }
-
         #endregion
     }
 }

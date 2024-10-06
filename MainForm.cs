@@ -222,6 +222,10 @@ namespace Hangman
                 aboutUsForm.ShowDialog();
             }
         }
-        
+
+        private void how_to_play_btn_Click(object sender, EventArgs e)
+        {
+            HowToPlay.ShowDialog;
+        }
     }
 }
