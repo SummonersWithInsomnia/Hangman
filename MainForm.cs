@@ -222,14 +222,5 @@ namespace Hangman
                 aboutUsForm.ShowDialog();
             }
         }
-
-        private void btn_how_to_play_Click(object sender, EventArgs e)
-        {
-            // To pop up HowToPlay
-            using (HowToPlay howToPlay = new HowToPlay())
-            {
-                //HowToPlay.ShowDialog();
-            }
-        }
     }
 }
